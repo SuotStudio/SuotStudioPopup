@@ -64,7 +64,7 @@ const GemstoneResult = () => {
       <Row
         gutter={8}
         align="bottom"
-        justify="center"
+        justify="center"git 
         className={styles.gemstoneResult__rowContainer}
       >
         <Col span={10}>
