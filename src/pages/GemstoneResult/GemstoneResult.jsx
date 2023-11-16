@@ -32,7 +32,7 @@ const GemstoneResult = () => {
         return qz.printers.find();
       })
       .then((printers) => {
-        console.log(printers);
+        console.log("PRINTERS", printers);
         let config = qz.configs.create("epson");
         return qz.print(config, [
           {
@@ -50,7 +50,7 @@ const GemstoneResult = () => {
         // process.exit(0);
       })
       .catch((err) => {
-        console.error(err);
+        console.error("PRINTER ERROR", err);
         // process.exit(1);
       });
   };
@@ -64,7 +64,8 @@ const GemstoneResult = () => {
       <Row
         gutter={8}
         align="bottom"
-        justify="center"git 
+        justify="center"
+        git
         className={styles.gemstoneResult__rowContainer}
       >
         <Col span={10}>
