@@ -1,0 +1,19 @@
+.elements__container{
+    min-height: 100vh;
+}
+
+.elements__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.elements__row button{
+    background: #000;
+    font-size: 50px;
+    height: auto;
+    min-width: 30rem;
+}
+
+.elements__row button:hover{
+    background-color: #000;
+}

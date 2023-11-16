@@ -1,0 +1,52 @@
+.contactDetails__container{
+    min-height: 100vh;
+}
+
+.contactDetails__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.contactDetails__formItem{
+    margin-bottom: 1rem;
+}
+
+.contactDetails__input{
+    width: 100%;
+    min-height: 4rem;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    padding: 0 10px;
+    border: none;
+}
+
+.contactDetails__error{
+    color: #ff0000;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.contactDetails__submitButton{
+    background: #000;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+:global .ant-space-item{
+    font-size: 30px;
+}
+
+.contactDetails__formItemSpace{
+    text-align: left;
+}
+
+
+:global .ant-space{
+    width: 100%;
+}
+

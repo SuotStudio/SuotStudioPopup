@@ -1,0 +1,20 @@
+.horoscope__container{
+    min-height: 100vh;
+}
+
+.horoscope__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.horoscopeSection__buttons button{
+    background: #000;
+    font-size: 50px;
+    height: auto;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.horoscope__row button:hover{
+    background-color: #000;
+}

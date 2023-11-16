@@ -1,0 +1,23 @@
+.home__container{
+    min-height: 100vh;
+    background: no-repeat url("https://www.clara.es/medio/2022/12/29/zafiro_9e291ecb_1280x886.jpg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.home__rowContainer{
+    height: 100vh;
+}
+
+.home__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.home__button{
+    background: #000;
+    border-radius: 0;
+    font-size: 38px;
+    height: auto;
+    margin-bottom: 2rem;
+}

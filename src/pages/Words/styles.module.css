@@ -1,0 +1,20 @@
+.words__container{
+    min-height: 100vh;
+}
+
+.words__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.wordsSection__buttons button{
+    background: #000;
+    font-size: 50px;
+    height: auto;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.words__row button:hover{
+    background-color: #000;
+}

@@ -1,0 +1,42 @@
+.gemstoneResult__container{
+    min-height: 100vh;
+    background: no-repeat url("https://www.clara.es/medio/2022/12/29/zafiro_9e291ecb_1280x886.jpg");
+    background-position: center;
+    background-size: cover; 
+}
+
+.gemstoneResult__rowContainer{
+    height: 100vh;
+}
+
+.gemstoneResult__title{
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.gemstoneResult__result{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.gemstoneResult__result p:nth-child(2){
+    color: #000;
+    background: #fff;
+    padding: 10px 5px;
+    font-size: 40px;
+}
+
+.gemstoneResult__action p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.gemstoneResult__button{
+    background: #000;
+    border-radius: 0;
+    font-size: 38px;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 55%;
+}

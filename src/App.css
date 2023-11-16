@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;1,100&family=Xanh+Mono&display=swap');
+
+*{
+  font-family: 'Xanh Mono', monospace;
+  margin: 0;
+}
+
+#root {
+  max-width: 100vW;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Xanh Mono', monospace;
+}
+
+.main__container{
+  height: 100vh;
+}
