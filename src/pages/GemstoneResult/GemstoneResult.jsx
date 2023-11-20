@@ -106,7 +106,7 @@ const GemstoneResult = () => {
               ref={componentRef}
             >
               <img
-                style={{ width: "50%" }}
+                style={{ width: "100%" }}
                 src="https://suotstudio.com/cdn/shop/files/logo_suot.png?height=628&pad_color=fff&v=1668421178&width=1200"
                 alt="gemstone img"
               />
@@ -126,6 +126,9 @@ const GemstoneResult = () => {
               </p>
               <p style={{ marginBottom: "20px" }}>
                 {gemstoneResultToPrint[userOptions?.userOptions.horoscope]}
+              </p>
+              <p style={{ marginBottom: "20px", textAlign: "center" }}>
+                <strong>www.suotstudio.com</strong>
               </p>
             </div>
           </Space>

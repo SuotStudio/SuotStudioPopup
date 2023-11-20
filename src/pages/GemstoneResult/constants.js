@@ -83,11 +83,11 @@ export const gemstoneResultToPrint = {
   PISCES:
     "Dive into serenity with Aquamarine, a gem resonating with Pisces' watery essence. Enhance intuition, calm, and spiritual connection for the compassionate Pisces.",
   SAGITTARIUS:
-    "Turquoise: Sagittarius finds harmony and protection in Turquoise. This gem inspires exploration, spiritual growth, and a vibrant connection with nature for the adventurous Sagittarius.",
+    "Finds harmony and protection in Turquoise. This gem inspires exploration, spiritual growth, and a vibrant connection with nature for the adventurous Sagittarius.",
   GEMINI:
     "Blue Agate empowers Gemini's communication skills. This calming gem encourages clarity, eloquence, and balance for the curious and adaptable Gemini.",
   LIBRA:
-    "Libra's quest for balance aligns with Lapis Lazuli, promoting harmony and inner truth. This royal blue gem enhances diplomatic skills and artistic expression.",
+    "Quest for balance aligns with Lapis Lazuli, promoting harmony and inner truth. This royal blue gem enhances diplomatic skills and artistic expression.",
   LEO: "Radiate love and warmth with Pink Quartz, Leo's heart-centered gem. Enhance creativity, self-love, and generosity for the charismatic and passionate Leo.",
   TAURUS:
     "Aventurine grounds Taurus in abundance and harmony. This green gem fosters stability, prosperity, and a strong connection to nature for the determined Taurus.",
