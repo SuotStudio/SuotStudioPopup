@@ -71,26 +71,26 @@ export const gemstoneResultImgToPrint = {
 
 export const gemstoneResultToPrint = {
   AQUARIUS:
-    "Amethyst: Embrace clarity and tranquillity with Amethyst, aligning your visionary mind and fostering inner peace for the forward-thinking Aquarius.",
+    "Embrace clarity and tranquillity with Amethyst, aligning your visionary mind and fostering inner peace for the forward-thinking Aquarius.",
   VIRGO:
-    "Citrine: Citrine illuminates Virgo's analytical nature, attracting success and prosperity. This golden gem enhances creativity and positivity for the detail-oriented Virgo.",
+    "Citrine illuminates Virgo's analytical nature, attracting success and prosperity. This golden gem enhances creativity and positivity for the detail-oriented Virgo.",
   CANCER:
-    "Pink Quartz: Radiate love and warmth with Pink Quartz, Leo's heart-centered gem. Enhance creativity, self-love, and generosity for the charismatic and passionate Leo.",
+    "Dive into emotions with Moonstone, offering Cancer a soothing connection to lunar energy, promoting intuition, and nurturing a sensitive and empathetic nature.",
   SCORPIO:
     "Channel Scorpio's intensity with Smoky Quartz, grounding and transforming negative energies. This dark gem enhances resilience and strength in the mysterious Scorpio.",
   ARIES:
     "Ignite passion and courage in Aries with Carnelian. This vibrant gem fosters vitality, confidence, and the adventurous spirit of the energetic Aries.",
   PISCES:
-    "Aquamarine: Dive into serenity with Aquamarine, a gem resonating with Pisces' watery essence. Enhance intuition, calm, and spiritual connection for the compassionate Pisces.",
+    "Dive into serenity with Aquamarine, a gem resonating with Pisces' watery essence. Enhance intuition, calm, and spiritual connection for the compassionate Pisces.",
   SAGITTARIUS:
     "Turquoise: Sagittarius finds harmony and protection in Turquoise. This gem inspires exploration, spiritual growth, and a vibrant connection with nature for the adventurous Sagittarius.",
   GEMINI:
-    "Blue Agate: Blue Agate empowers Gemini's communication skills. This calming gem encourages clarity, eloquence, and balance for the curious and adaptable Gemini.",
+    "Blue Agate empowers Gemini's communication skills. This calming gem encourages clarity, eloquence, and balance for the curious and adaptable Gemini.",
   LIBRA:
-    "Lapis Lazuli: Libra's quest for balance aligns with Lapis Lazuli, promoting harmony and inner truth. This royal blue gem enhances diplomatic skills and artistic expression.",
-  LEO: "Moonstone: Dive into emotions with Moonstone, offering Cancer a soothing connection to lunar energy, promoting intuition, and nurturing a sensitive and empathetic nature.",
+    "Libra's quest for balance aligns with Lapis Lazuli, promoting harmony and inner truth. This royal blue gem enhances diplomatic skills and artistic expression.",
+  LEO: "Radiate love and warmth with Pink Quartz, Leo's heart-centered gem. Enhance creativity, self-love, and generosity for the charismatic and passionate Leo.",
   TAURUS:
-    "Aventurine: Aventurine grounds Taurus in abundance and harmony. This green gem fosters stability, prosperity, and a strong connection to nature for the determined Taurus.",
+    "Aventurine grounds Taurus in abundance and harmony. This green gem fosters stability, prosperity, and a strong connection to nature for the determined Taurus.",
   CAPRICORN:
-    "Garnet: Capricorn's ambition finds support in Garnet, a gem of strength and endurance. Enhance focus, passion, and success in the disciplined Capricorn.",
+    "Capricorn's ambition finds support in Garnet, a gem of strength and endurance. Enhance focus, passion, and success in the disciplined Capricorn.",
 };
