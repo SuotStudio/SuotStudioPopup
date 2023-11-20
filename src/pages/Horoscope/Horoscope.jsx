@@ -25,7 +25,7 @@ const Horoscope = () => {
       align="middle"
       className={styles.horoscope__container}
     >
-      <Col span={20}>
+      <Col span={22}>
         <h2 className={styles.horoscope__title}>What´s your horoscope sign?</h2>
         <Row
           gutter={8}

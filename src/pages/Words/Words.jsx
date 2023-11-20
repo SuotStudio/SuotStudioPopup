@@ -25,7 +25,7 @@ const Words = () => {
       align="middle"
       className={styles.words__container}
     >
-      <Col span={20}>
+      <Col span={22}>
         <h2 className={styles.words__title}>
           With which words do you feel most represented?
         </h2>
