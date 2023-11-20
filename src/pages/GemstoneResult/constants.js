@@ -14,7 +14,7 @@ import turquesa from "../../assets/videos/turquesa_suot.webm";
 import amethystPNG from "../../assets/stones/ticketStones/amatista.png";
 import aquamarinePNG from "../../assets/stones/ticketStones/aguaMarina.png";
 import aventurinePNG from "../../assets/stones/ticketStones/aventurina.png";
-import blueAgatePNG from "../../assets/stones/ticketStones/AgataAzul.png";
+import blueAgatePNG from "../../assets/stones/ticketStones/agataAzul.png";
 import carnelianPNG from "../../assets/stones/ticketStones/coralina.png";
 import citrineVPNG from "../../assets/stones/ticketStones/citrino.png";
 import garnetPNG from "../../assets/stones/ticketStones/granate.png";
