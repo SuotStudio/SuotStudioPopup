@@ -42,14 +42,14 @@ export const gemstoneResult = {
 export const gemstoneVideoResult = {
   AQUARIUS: amatista,
   VIRGO: citrino,
-  CANCER: cuarzorosa,
+  CANCER: piedraluna,
   SCORPIO: cuarzo,
   ARIES: coralina,
   PISCES: aguaMarina,
   SAGITTARIUS: turquesa,
   GEMINI: agataAzul,
   LIBRA: lapislazuli,
-  LEO: piedraluna,
+  LEO: cuarzorosa,
   TAURUS: aventurina,
   CAPRICORN: granate,
 };
