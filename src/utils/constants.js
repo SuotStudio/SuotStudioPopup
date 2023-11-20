@@ -33,8 +33,8 @@ export const horoscope = [
   "VIRGO",
   "LIBRA",
   "SCORPIO",
-  "SAGITARIUS",
+  "SAGITTARIUS",
   "CAPRICORN",
   "AQUARIUS",
-  "PISCIS",
+  "PISCES",
 ];

@@ -33,7 +33,7 @@ const ContactDetails = () => {
       className={styles.contactDetails__container}
     >
       <Col span={10}>
-        <h2 className={styles.contactDetails__title}>Who you are?</h2>
+        <h2 className={styles.contactDetails__title}>Who are you?</h2>
         <Formik
           initialValues={{
             firstName: "",

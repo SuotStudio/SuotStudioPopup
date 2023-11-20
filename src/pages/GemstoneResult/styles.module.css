@@ -53,3 +53,11 @@
     margin-bottom: 2rem;
     width: 55%;
 }
+
+.gemstoneResult__descriptionTrue{
+    display: initial;
+}
+
+.gemstoneResult__descriptionFalse{
+    display: none;
+}

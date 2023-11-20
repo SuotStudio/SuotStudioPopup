@@ -2,20 +2,32 @@ import { useEffect, useRef } from "react";
 import { Button, Col, Row, Space } from "antd";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import {
+  gemstoneResult,
+  gemstoneResultImgToPrint,
+  gemstoneResultToPrint,
+  gemstoneVideoResult,
+} from "./constants";
 import qz from "qz-tray";
+import { useReactToPrint } from "react-to-print";
 import styles from "./styles.module.css";
-import { gemstoneResult, gemstoneVideoResult } from "./constants";
 
 const GemstoneResult = () => {
   const navigate = useNavigate();
   const userOptions = useSelector((state) => state);
   const videoRef = useRef(null);
+  const componentRef = useRef();
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play();
     }
   }, []);
+
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+    onAfterPrint: () => navigate("/"),
+  });
 
   const handleOnPrintTicket = () => {
     qz.websocket
@@ -88,10 +100,25 @@ const GemstoneResult = () => {
               <Button
                 className={styles.gemstoneResult__button}
                 type="primary"
-                onClick={handleOnPrintTicket}
+                onClick={handlePrint}
               >
                 PRINT
               </Button>
+            </div>
+            <div
+              style={{ color: "black", position: "absolute", padding: "3rem" }}
+              ref={componentRef}
+            >
+              <p style={{ marginBottom: "20px" }}>
+                {gemstoneResultToPrint[userOptions?.userOptions.horoscope]}
+              </p>
+              <img
+                style={{ width: "100%" }}
+                src={
+                  gemstoneResultImgToPrint[userOptions?.userOptions.horoscope]
+                }
+                alt="gemstone img"
+              />
             </div>
           </Space>
         </Col>

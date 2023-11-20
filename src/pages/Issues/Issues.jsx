@@ -10,7 +10,6 @@ const Issues = () => {
   const dispatch = useDispatch();
 
   const handleOnNavigate = (issue) => {
-    console.log("ISSUE", issue);
     dispatch(
       addUserOption({
         issue,
