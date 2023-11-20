@@ -11,18 +11,18 @@ import lapislazuli from "../../assets/videos/lapislazuli_suot.webm";
 import piedraluna from "../../assets/videos/piedraluna_suot.webm";
 import turquesa from "../../assets/videos/turquesa_suot.webm";
 
-import amethystPNG from "../../assets/stones/amethyst.png";
-import aquamarinePNG from "../../assets/stones/aquamarine.png";
-import aventurinePNG from "../../assets/stones/aventurine.png";
-import blueAgatePNG from "../../assets/stones/blueAgate.png";
-import carnelianPNG from "../../assets/stones/carnelian.png";
-import citrineVPNG from "../../assets/stones/citrineV.png";
-import garnetPNG from "../../assets/stones/garnet.png";
-import lapislazuliPNG from "../../assets/stones/lapizlazuli.png";
-import moonstonePNG from "../../assets/stones/moonstone.png";
-import pinkQuartzPNG from "../../assets/stones/pinkQuartz.png";
-import smokyQuartzPNG from "../../assets/stones/smokyQuartz.png";
-import turquoisePNG from "../../assets/stones/turquoise.png";
+import amethystPNG from "../../assets/stones/ticketStones/amatista.png";
+import aquamarinePNG from "../../assets/stones/ticketStones/aguaMarina.png";
+import aventurinePNG from "../../assets/stones/ticketStones/aventurina.png";
+import blueAgatePNG from "../../assets/stones/ticketStones/AgataAzul.png";
+import carnelianPNG from "../../assets/stones/ticketStones/coralina.png";
+import citrineVPNG from "../../assets/stones/ticketStones/citrino.png";
+import garnetPNG from "../../assets/stones/ticketStones/granate.png";
+import lapislazuliPNG from "../../assets/stones/ticketStones/lapislazuli.png";
+import moonstonePNG from "../../assets/stones/ticketStones/piedraLuna.png";
+import pinkQuartzPNG from "../../assets/stones/ticketStones/cuarzoRosa.png";
+import smokyQuartzPNG from "../../assets/stones/ticketStones/cuarzoAhumado.png";
+import turquoisePNG from "../../assets/stones/ticketStones/turquesa.png";
 
 export const gemstoneResult = {
   AQUARIUS: "AMETHYST",

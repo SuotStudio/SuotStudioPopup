@@ -27,7 +27,7 @@ const Elements = () => {
     >
       <Col span={20}>
         <h2 className={styles.elements__title}>
-          Which os the four elements are you most attuned to?
+          Which of the four elements are you most attuned to?
         </h2>
         <Space
           className={styles.elements__row}

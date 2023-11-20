@@ -27,7 +27,7 @@ const Words = () => {
     >
       <Col span={20}>
         <h2 className={styles.words__title}>
-          What issues have you been focusing on lately?
+          With which words do you feel most represented?
         </h2>
         <Row
           gutter={8}
