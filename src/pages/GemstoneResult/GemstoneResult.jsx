@@ -1,29 +1,21 @@
+import { useEffect, useRef } from "react";
 import { Button, Col, Row, Space } from "antd";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import qz from "qz-tray";
 import styles from "./styles.module.css";
+import { gemstoneResult, gemstoneVideoResult } from "./constants";
 
 const GemstoneResult = () => {
   const navigate = useNavigate();
   const userOptions = useSelector((state) => state);
+  const videoRef = useRef(null);
 
-  console.log("USER OPTIONS", userOptions);
-
-  const ThermalPrintButton = async () => {
-    try {
-      await qz.printers.find();
-
-      const printer = "epson"; // Reemplaza con el nombre de tu impresora térmica
-      const data = ["Hello, Thermal Printer!", "\x1D\x56\x41"]; // Código de corte de papel
-
-      await qz.print({ printer, data });
-
-      console.log("Impresión exitosa");
-    } catch (error) {
-      console.error("Error printing:", error.message);
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
     }
-  };
+  }, []);
 
   const handleOnPrintTicket = () => {
     qz.websocket
@@ -68,12 +60,28 @@ const GemstoneResult = () => {
         git
         className={styles.gemstoneResult__rowContainer}
       >
-        <Col span={10}>
-          <Space direction="vertical">
+        <Col lg={10} md={22} xs={22}>
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            width="100%"
+            className={styles.gemstoneResult__video}
+          >
+            <source
+              src={gemstoneVideoResult[userOptions?.userOptions.horoscope]}
+              type="video/webm"
+            />
+            Tu navegador no soporta el elemento de video.
+          </video>
+          <Space
+            direction="vertical"
+            className={styles.gemstoneResult__spaceContainer}
+          >
             <h2 className={styles.gemstoneResult__title}>SUOT STUDIO</h2>
             <div className={styles.gemstoneResult__result}>
               <p>Your gemstone is</p>
-              <p>LAPISLAZULI</p>
+              <p>{gemstoneResult[userOptions?.userOptions.horoscope]}</p>
             </div>
             <div className={styles.gemstoneResult__action}>
               <p>DISCOVER MORE</p>
