@@ -36,7 +36,7 @@ const Words = () => {
         >
           {wordsRepresented.map((word, index) => {
             return (
-              <Col span={10} key={index}>
+              <Col span={12} key={index}>
                 <Button type="primary" onClick={() => handleOnNavigate(word)}>
                   {word}
                 </Button>

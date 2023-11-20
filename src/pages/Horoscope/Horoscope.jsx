@@ -34,7 +34,7 @@ const Horoscope = () => {
         >
           {horoscope.map((horoscope, index) => {
             return (
-              <Col span={10} key={index}>
+              <Col span={12} key={index}>
                 <Button
                   type="primary"
                   onClick={() => handleOnNavigate(horoscope)}
