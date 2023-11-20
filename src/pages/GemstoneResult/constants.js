@@ -57,14 +57,14 @@ export const gemstoneVideoResult = {
 export const gemstoneResultImgToPrint = {
   AQUARIUS: amethystPNG,
   VIRGO: citrineVPNG,
-  CANCER: pinkQuartzPNG,
+  CANCER: moonstonePNG,
   SCORPIO: smokyQuartzPNG,
   ARIES: carnelianPNG,
   PISCES: aquamarinePNG,
   SAGITTARIUS: turquoisePNG,
   GEMINI: blueAgatePNG,
   LIBRA: lapislazuliPNG,
-  LEO: moonstonePNG,
+  LEO: pinkQuartzPNG,
   TAURUS: aventurinePNG,
   CAPRICORN: garnetPNG,
 };
