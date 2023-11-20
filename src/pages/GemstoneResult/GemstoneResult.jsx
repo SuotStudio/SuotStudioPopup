@@ -102,12 +102,15 @@ const GemstoneResult = () => {
               </Button>
             </div>
             <div
-              style={{ color: "black", position: "absolute", padding: "3rem" }}
+              style={{ color: "black", position: "absolute", padding: "2rem" }}
               ref={componentRef}
             >
-              <p style={{ marginBottom: "20px" }}>
-                {gemstoneResultToPrint[userOptions?.userOptions.horoscope]}
-              </p>
+              <img
+                style={{ width: "50%" }}
+                src="https://suotstudio.com/cdn/shop/files/logo_suot.png?height=628&pad_color=fff&v=1668421178&width=1200"
+                alt="gemstone img"
+              />
+
               <img
                 style={{ width: "100%" }}
                 src={
@@ -115,6 +118,15 @@ const GemstoneResult = () => {
                 }
                 alt="gemstone img"
               />
+              <p>
+                The stone that corresponds to you is:{" "}
+                <strong>
+                  {gemstoneResult[userOptions?.userOptions.horoscope]}
+                </strong>
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                {gemstoneResultToPrint[userOptions?.userOptions.horoscope]}
+              </p>
             </div>
           </Space>
         </Col>
