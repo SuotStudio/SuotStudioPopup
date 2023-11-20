@@ -1,0 +1,20 @@
+.wearGemstone__container{
+    min-height: 90vh;
+    overflow-x: scroll;
+}
+
+.wearGemstone__title{
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.wearGemstone__row button{
+    background: #000;
+    font-size: 50px;
+    height: auto;
+    min-width: 30rem;
+}
+
+.wearGemstone__row button:hover{
+    background-color: #000;
+}

@@ -6,6 +6,7 @@ import Words from "./pages/Words";
 import Horoscope from "./pages/Horoscope";
 import ContactDetails from "./pages/ContactDetails";
 import GemstoneResult from "./pages/GemstoneResult";
+import WearGemstone from "./pages/WearGemstone";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact-details" element={<ContactDetails />} />
         <Route path="/horoscope" element={<Horoscope />} />
         <Route path="/gemstone-result" element={<GemstoneResult />} />
+        <Route path="/wear-gemstone" element={<WearGemstone />} />
       </Routes>
     </main>
   );

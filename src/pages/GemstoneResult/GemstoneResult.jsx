@@ -26,7 +26,7 @@ const GemstoneResult = () => {
 
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
-    onAfterPrint: () => navigate("/"),
+    onAfterPrint: () => navigate("/wear-gemstone"),
   });
 
   const handleOnPrintTicket = () => {
@@ -57,10 +57,6 @@ const GemstoneResult = () => {
         console.error("PRINTER ERROR", err);
         // process.exit(1);
       });
-  };
-
-  const handleOnNavigate = () => {
-    navigate("/");
   };
 
   return (
