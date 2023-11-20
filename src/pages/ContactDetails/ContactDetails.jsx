@@ -42,6 +42,7 @@ const ContactDetails = () => {
             city: "",
           }}
           validationSchema={ContactSchema}
+          autoComplete={false}
           onSubmit={(values) => {
             console.log(values);
             dispatch(
@@ -57,7 +58,7 @@ const ContactDetails = () => {
           }}
         >
           {({ errors, touched }) => (
-            <Form>
+            <Form autoComplete="off">
               <div className={styles.contactDetails__formItem}>
                 <Space
                   direction="vertical"
@@ -68,6 +69,7 @@ const ContactDetails = () => {
                   <Field
                     name="firstName"
                     className={styles.contactDetails__input}
+                    autoComplete="off"
                   />
                   {errors.firstName && touched.firstName ? (
                     <div className={styles.contactDetails__error}>
@@ -88,6 +90,7 @@ const ContactDetails = () => {
                     name="email"
                     type="email"
                     className={styles.contactDetails__input}
+                    autoComplete="off"
                   />
                   {errors.email && touched.email ? (
                     <div className={styles.contactDetails__error}>
@@ -107,6 +110,7 @@ const ContactDetails = () => {
                   <Field
                     name="phone"
                     className={styles.contactDetails__input}
+                    autoComplete="off"
                   />
                   {errors.phone && touched.phone ? (
                     <div className={styles.contactDetails__error}>
@@ -123,7 +127,11 @@ const ContactDetails = () => {
                   className={styles.contactDetails__formItemSpace}
                 >
                   <label>CITY</label>
-                  <Field name="city" className={styles.contactDetails__input} />
+                  <Field
+                    name="city"
+                    className={styles.contactDetails__input}
+                    autoComplete="off"
+                  />
                   {errors.city && touched.city ? (
                     <div className={styles.contactDetails__error}>
                       {errors.city}
