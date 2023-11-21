@@ -10,6 +10,7 @@ import {
 } from "./constants";
 import qz from "qz-tray";
 import { useReactToPrint } from "react-to-print";
+import logoSuotStudio from "../../assets/logoSuotStudio.png";
 import styles from "./styles.module.css";
 
 const GemstoneResult = () => {
@@ -72,6 +73,7 @@ const GemstoneResult = () => {
           <video
             ref={videoRef}
             autoPlay
+            loop
             muted
             width="100%"
             className={styles.gemstoneResult__video}
@@ -102,12 +104,12 @@ const GemstoneResult = () => {
               </Button>
             </div>
             <div
-              style={{ color: "black", position: "absolute", padding: "2rem" }}
+              style={{ color: "black", position: "absolute", paddingTop: "18rem" }}
               ref={componentRef}
             >
               <img
                 style={{ width: "100%" }}
-                src="https://suotstudio.com/cdn/shop/files/logo_suot.png?height=628&pad_color=fff&v=1668421178&width=1200"
+                src={logoSuotStudio}
                 alt="gemstone img"
               />
 
