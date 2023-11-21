@@ -31,6 +31,7 @@ const Home = () => {
           <video
             ref={videoRef}
             autoPlay
+            loop
             muted
             width="100%"
             className={styles.home__video}

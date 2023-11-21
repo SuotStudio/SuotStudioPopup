@@ -60,8 +60,6 @@ const GemstoneResult = () => {
       });
   };
 
-  console.log("userOptions", userOptions);
-
   return (
     <section className={styles.gemstoneResult__container}>
       <Row
