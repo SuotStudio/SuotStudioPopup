@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
+    "@supabase/supabase-js": "^2.38.5",
     "antd": "^5.11.0",
     "formik": "^2.4.5",
     "qz-tray": "^2.2.3",

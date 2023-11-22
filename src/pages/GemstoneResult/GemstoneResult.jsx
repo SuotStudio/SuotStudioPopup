@@ -8,10 +8,11 @@ import {
   gemstoneResultToPrint,
   gemstoneVideoResult,
 } from "./constants";
-import qz from "qz-tray";
+// import qz from "qz-tray";
 import { useReactToPrint } from "react-to-print";
 import logoSuotStudio from "../../assets/logoSuotStudio.png";
 import styles from "./styles.module.css";
+import { supabase } from "../../supabase";
 
 const GemstoneResult = () => {
   const navigate = useNavigate();
@@ -30,35 +31,56 @@ const GemstoneResult = () => {
     onAfterPrint: () => navigate("/wear-gemstone"),
   });
 
-  const handleOnPrintTicket = () => {
-    qz.websocket
-      .connect()
-      .then(() => {
-        return qz.printers.find();
-      })
-      .then((printers) => {
-        console.log("PRINTERS", printers);
-        let config = qz.configs.create("epson");
-        return qz.print(config, [
-          {
-            type: "pixel",
-            format: "html",
-            flavor: "plain",
-            data: "<h1>Hello JavaScript!</h1>",
-          },
-        ]);
-      })
-      .then(() => {
-        return qz.websocket.disconnect();
-      })
-      .then(() => {
-        // process.exit(0);
-      })
-      .catch((err) => {
-        console.error("PRINTER ERROR", err);
-        // process.exit(1);
-      });
+  const handleCreateUser = async () => {
+    const { error } = await supabase.from("users").insert([
+      {
+        name: userOptions?.userContactDetails?.name,
+        email: userOptions?.userContactDetails?.email,
+        phone: userOptions?.userContactDetails?.phone,
+        city: userOptions?.userContactDetails?.city,
+        horoscope: userOptions?.userOptions?.horoscope,
+      },
+    ]);
+
+    if (error) {
+      console.error(error);
+    }
   };
+
+  useEffect(() => {
+    handleCreateUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // const handleOnPrintTicket = () => {
+  //   qz.websocket
+  //     .connect()
+  //     .then(() => {
+  //       return qz.printers.find();
+  //     })
+  //     .then((printers) => {
+  //       console.log("PRINTERS", printers);
+  //       let config = qz.configs.create("epson");
+  //       return qz.print(config, [
+  //         {
+  //           type: "pixel",
+  //           format: "html",
+  //           flavor: "plain",
+  //           data: "<h1>Hello JavaScript!</h1>",
+  //         },
+  //       ]);
+  //     })
+  //     .then(() => {
+  //       return qz.websocket.disconnect();
+  //     })
+  //     .then(() => {
+  //       // process.exit(0);
+  //     })
+  //     .catch((err) => {
+  //       console.error("PRINTER ERROR", err);
+  //       // process.exit(1);
+  //     });
+  // };
 
   return (
     <section className={styles.gemstoneResult__container}>
@@ -104,7 +126,11 @@ const GemstoneResult = () => {
               </Button>
             </div>
             <div
-              style={{ color: "black", position: "absolute", paddingTop: "18rem" }}
+              style={{
+                color: "black",
+                position: "absolute",
+                paddingTop: "18rem",
+              }}
               ref={componentRef}
             >
               <img
