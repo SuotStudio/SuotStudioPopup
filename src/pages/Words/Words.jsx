@@ -1,4 +1,5 @@
-import { Button, Col, Row } from "antd";
+import { Button, Checkbox, Col, Row, Space } from "antd";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addUserOption } from "../../store/slices/userOptions";
@@ -8,11 +9,37 @@ import styles from "./styles.module.css";
 const Words = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [activeWords, setActiveWords] = useState([]);
+  const [selectAll, setSelectAll] = useState(false);
 
-  const handleOnNavigate = (word) => {
+  const transformedOptions = activeWords.map((item) => item.label);
+
+  const handleOnSelectOptions = (word) => {
+    const isWordActive = activeWords.includes(word);
+
+    if (isWordActive) {
+      setActiveWords(activeWords.filter((item) => item.id !== word.id));
+    } else {
+      setActiveWords([...activeWords, word]);
+    }
+  };
+
+  const handleOnSelectAll = () => {
+    const allWords = wordsRepresented.map((word) => word);
+
+    if (selectAll) {
+      setActiveWords([]);
+    } else {
+      setActiveWords(allWords);
+    }
+
+    setSelectAll(!selectAll);
+  };
+
+  const handleOnNavigate = () => {
     dispatch(
       addUserOption({
-        word,
+        words: transformedOptions,
       })
     );
     navigate("/contact-details");
@@ -34,16 +61,41 @@ const Words = () => {
           justify="center"
           className={styles.wordsSection__buttons}
         >
-          {wordsRepresented.map((word, index) => {
+          {wordsRepresented.map((word) => {
+            const isWordActive = activeWords.includes(word);
             return (
-              <Col span={12} key={index}>
-                <Button type="primary" onClick={() => handleOnNavigate(word)}>
-                  {word}
+              <Col span={12} key={word.id}>
+                <Button
+                  type="primary"
+                  onClick={() => handleOnSelectOptions(word)}
+                  style={{ background: isWordActive ? "#52c41a" : "" }}
+                >
+                  {word.label}
                 </Button>
               </Col>
             );
           })}
         </Row>
+        <Row justify="start">
+          <Col span={24}>
+            <Checkbox style={{ fontSize: "32px" }} onChange={handleOnSelectAll}>
+              All of the above
+            </Checkbox>
+          </Col>
+        </Row>
+        {activeWords.length > 0 && (
+          <Row justify="center">
+            <Col span={6}>
+              <Button
+                type="primary"
+                className={styles.continue__button}
+                onClick={handleOnNavigate}
+              >
+                Continue
+              </Button>
+            </Col>
+          </Row>
+        )}
       </Col>
     </Row>
   );

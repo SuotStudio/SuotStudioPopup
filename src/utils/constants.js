@@ -12,16 +12,46 @@ export const issues = ["LOVE", "FINANCES", "HEALTH", "FAMILY", "FRIENDSHIPS"];
 export const elements = ["FIRE", "WATER", "EARTH", "WIND"];
 
 export const wordsRepresented = [
-  "EMOTIONAL",
-  "FUN",
-  "LOGICAL",
-  "CLEVER",
-  "INTROVERTED",
-  "INTIMIDATING",
-  "LOYAL",
-  "RELIABLE",
-  "HONEST",
-  "AESTHETIC",
+  {
+    id: 1,
+    label: "EMOTIONAL",
+  },
+  {
+    id: 2,
+    label: "FUN",
+  },
+  {
+    id: 3,
+    label: "LOGICAL",
+  },
+  {
+    id: 4,
+    label: "CLEVER",
+  },
+  {
+    id: 5,
+    label: "INTROVERTED",
+  },
+  {
+    id: 6,
+    label: "INTIMIDATING",
+  },
+  {
+    id: 7,
+    label: "LOYAL",
+  },
+  {
+    id: 8,
+    label: "RELIABLE",
+  },
+  {
+    id: 9,
+    label: "HONEST",
+  },
+  {
+    id: 10,
+    label: "AESTHETIC",
+  },
 ];
 
 export const horoscope = [

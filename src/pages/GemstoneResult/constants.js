@@ -11,6 +11,14 @@ import lapislazuli from "../../assets/videos/lapislazuli_suot.webm";
 import piedraluna from "../../assets/videos/piedraluna_suot.webm";
 import turquesa from "../../assets/videos/turquesa_suot.webm";
 
+
+import greenAgate from "../../assets/videos/agata_verde.webm";
+import cisoprasa from "../../assets/videos/crisoprasa_2.webm";
+import tumalinatedQuartz  from "../../assets/videos/cuarzo_turmalinado_2.webm";
+import lemonQuartz from "../../assets/videos/lemon_quartz.webm";
+
+
+
 import amethystPNG from "../../assets/stones/ticketStones/amatista.png";
 import aquamarinePNG from "../../assets/stones/ticketStones/aguaMarina.png";
 import aventurinePNG from "../../assets/stones/ticketStones/aventurina.png";
@@ -26,44 +34,44 @@ import turquoisePNG from "../../assets/stones/ticketStones/turquesa.png";
 
 export const gemstoneResult = {
   AQUARIUS: "AMETHYST",
-  VIRGO: "CITRINE",
-  CANCER: "MOONSTONE",
-  SCORPIO: "SMOKE QUARTZ",
-  ARIES: "CARNELIAN",
-  PISCES: "AQUAMARINE",
-  SAGITTARIUS: "TURQUOISE",
-  GEMINI: "BLUE AGATE",
-  LIBRA: "LAPIS LAZULI",
+  VIRGO: "CARNELIAN",
+  CANCER: "AVENTURINE",
+  SCORPIO: "TOPAZ",
+  ARIES: "RUBY",
+  PISCES: "CRISOPRASA",
+  SAGITTARIUS: "PINK OPAL",
+  GEMINI: "TUMALINATED QUARTZ",
+  LIBRA: "CITRINO",
   LEO: "PINK QUARTZ",
-  TAURUS: "AVENTURINE",
+  TAURUS: "GREEN AGATE",
   CAPRICORN: "GARNET",
 };
 
 export const gemstoneVideoResult = {
   AQUARIUS: amatista,
   VIRGO: citrino,
-  CANCER: piedraluna,
-  SCORPIO: cuarzo,
+  CANCER: aventurina,
+  SCORPIO: aguaMarina,
   ARIES: coralina,
-  PISCES: aguaMarina,
+  PISCES: cisoprasa,
   SAGITTARIUS: turquesa,
-  GEMINI: agataAzul,
+  GEMINI: tumalinatedQuartz,
   LIBRA: lapislazuli,
   LEO: cuarzorosa,
-  TAURUS: aventurina,
-  CAPRICORN: granate,
+  TAURUS: greenAgate,
+  CAPRICORN: lemonQuartz,
 };
 
 export const gemstoneResultImgToPrint = {
   AQUARIUS: amethystPNG,
-  VIRGO: citrineVPNG,
-  CANCER: moonstonePNG,
-  SCORPIO: smokyQuartzPNG,
+  VIRGO: carnelianPNG,
+  CANCER: aventurinePNG,
+  SCORPIO: aquamarinePNG,
   ARIES: carnelianPNG,
   PISCES: aquamarinePNG,
-  SAGITTARIUS: turquoisePNG,
+  SAGITTARIUS: pinkQuartzPNG,
   GEMINI: blueAgatePNG,
-  LIBRA: lapislazuliPNG,
+  LIBRA: citrineVPNG,
   LEO: pinkQuartzPNG,
   TAURUS: aventurinePNG,
   CAPRICORN: garnetPNG,
@@ -71,26 +79,26 @@ export const gemstoneResultImgToPrint = {
 
 export const gemstoneResultToPrint = {
   AQUARIUS:
-    "Embrace clarity and tranquillity with Amethyst, aligning your visionary mind and fostering inner peace for the forward-thinking Aquarius.",
+    "Your journey embraces amethyst because its regal energy aligns with your quest for inner clarity and spiritual growth.",
   VIRGO:
-    "Citrine illuminates Virgo's analytical nature, attracting success and prosperity. This golden gem enhances creativity and positivity for the detail-oriented Virgo.",
+    "Energetic and adventurous, carnelian chose you to boost your courage and creativity on life's dynamic path.",
   CANCER:
-    "Dive into emotions with Moonstone, offering Cancer a soothing connection to lunar energy, promoting intuition, and nurturing a sensitive and empathetic nature.",
+    "Aventurine, your gem, resonates with your spirit, guiding you towards prosperity and emotional healing in life's adventures.",
   SCORPIO:
-    "Channel Scorpio's intensity with Smoky Quartz, grounding and transforming negative energies. This dark gem enhances resilience and strength in the mysterious Scorpio.",
+    "Topaz, a gem of love and fortune, chose you to rejuvenate your spirit and illuminate your unique path of self-discovery.",
   ARIES:
-    "Ignite passion and courage in Aries with Carnelian. This vibrant gem fosters vitality, confidence, and the adventurous spirit of the energetic Aries.",
+    "Ruby shields your passionate soul, offering vitality and protection because you are destined for a journey filled with positivity.",
   PISCES:
-    "Dive into serenity with Aquamarine, a gem resonating with Pisces' watery essence. Enhance intuition, calm, and spiritual connection for the compassionate Pisces.",
+    "Nature-loving and optimistic, chrysoprase is your companion, fostering compassion and love as you harmonize with the world.",
   SAGITTARIUS:
-    "Finds harmony and protection in Turquoise. This gem inspires exploration, spiritual growth, and a vibrant connection with nature for the adventurous Sagittarius.",
+    "Chosen for you, pink opal unveils emotional healing and tranquility, creating a sanctuary within for love and well-being.",
   GEMINI:
-    "Blue Agate empowers Gemini's communication skills. This calming gem encourages clarity, eloquence, and balance for the curious and adaptable Gemini.",
+    "Resilient and strong, tourmalinated quartz is your ally, grounding and shielding you on life's challenges with grace.",
   LIBRA:
-    "Quest for balance aligns with Lapis Lazuli, promoting harmony and inner truth. This royal blue gem enhances diplomatic skills and artistic expression.",
-  LEO: "Radiate love and warmth with Pink Quartz, Leo's heart-centered gem. Enhance creativity, self-love, and generosity for the charismatic and passionate Leo.",
+    "Abundance beckons you; citrine chose you for a life filled with prosperity, joy, and vibrant, harmonious existence.",
+  LEO: "Your path is guided by love and healing as pink quartz resonates with your essence, fostering compassion in every step.",
   TAURUS:
-    "Aventurine grounds Taurus in abundance and harmony. This green gem fosters stability, prosperity, and a strong connection to nature for the determined Taurus.",
+    "Chosen for its steadfast energy, green agate nurtures balance and growth, harmonizing with your unique life journey.",
   CAPRICORN:
-    "Capricorn's ambition finds support in Garnet, a gem of strength and endurance. Enhance focus, passion, and success in the disciplined Capricorn.",
+    "Illuminating your path, lemon quartz chose you for clarity and focus, infusing positive energy into your forward steps.",
 };

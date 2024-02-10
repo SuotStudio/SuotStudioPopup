@@ -15,9 +15,7 @@ const ContactSchema = Yup.object().shape({
     .max(50, "Too Long!")
     .required("Required name"),
   email: Yup.string().email("Invalid email").required("Required email"),
-  phone: Yup.string()
-    .matches(phoneRegExp, "Phone number is not valid")
-    .required("Required phone"),
+  phone: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
   city: Yup.string().required("Required city"),
 });
 
