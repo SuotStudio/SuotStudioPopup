@@ -19,7 +19,7 @@ import carnelianPNG from "../../assets/stones/carnelian.png";
 import chrysoprasePNG from "../../assets/stones/chrysoprase.webp";
 import citrineVPNG from "../../assets/stones/citrine.png";
 import garnetPNG from "../../assets/stones/garnet.png";
-import greenAgatePNG from "../../assets/stones/green_Agate.webp";
+import greenAgatePNG from "../../assets/stones/green_agate.webp";
 import pinkOpalPNG from "../../assets/stones/pink_opal.png";
 import pinkQuartzPNG from "../../assets/stones/pink_quartz.webp";
 import rubyPNG from "../../assets/stones/ruby.webp";

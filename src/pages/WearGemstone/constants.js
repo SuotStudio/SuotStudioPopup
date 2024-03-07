@@ -40,13 +40,13 @@ import garnet3PNG from "../../assets/stones/garnet3.png";
 import garnet4PNG from "../../assets/stones/garnet4.png";
 import garnet5PNG from "../../assets/stones/garnet5.png";
 
-import greenAgatePNG from "../../assets/stones/green_Agate.webp";
-import greenAgate2PNG from "../../assets/stones/green_Agate2.webp";
-import greenAgate3PNG from "../../assets/stones/green_Agate3.webp";
-import greenAgate4PNG from "../../assets/stones/green_Agate4.webp";
-import greenAgate5PNG from "../../assets/stones/green_Agate5.webp";
-import greenAgate6PNG from "../../assets/stones/green_Agate6.webp";
-import greenAgate7PNG from "../../assets/stones/green_Agate7.webp";
+import greenAgatePNG from "../../assets/stones/green_agate.webp";
+import greenAgate2PNG from "../../assets/stones/green_agate2.webp";
+import greenAgate3PNG from "../../assets/stones/green_agate3.webp";
+import greenAgate4PNG from "../../assets/stones/green_agate4.webp";
+import greenAgate5PNG from "../../assets/stones/green_agate5.webp";
+import greenAgate6PNG from "../../assets/stones/green_agate6.webp";
+import greenAgate7PNG from "../../assets/stones/green_agate7.webp";
 
 import pinkOpalPNG from "../../assets/stones/pink_opal.png";
 import pinkOpal2PNG from "../../assets/stones/pink_opal2.webp";
