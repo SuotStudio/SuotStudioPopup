@@ -44,7 +44,7 @@ export const gemstoneVideoResult = {
   VIRGO: coralina, 
   CANCER: aventurina,
   SCORPIO: aguaMarina,
-  ARIES: lemonQuartz,
+  ARIES: granate,
   PISCES: cisoprasa,
   SAGITTARIUS: cuarzorosa,
   GEMINI: tumalinatedQuartz,
