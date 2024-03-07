@@ -3,10 +3,8 @@ import amatista from "../../assets/videos/amatista_suot.webm";
 import aventurina from "../../assets/videos/aventurina_suot.webm";
 import citrino from "../../assets/videos/citrino_suot.webm";
 import coralina from "../../assets/videos/coralina_suot.webm";
-import cuarzo from "../../assets/videos/cuarzo_ahumado_suot.webm";
 import cuarzorosa from "../../assets/videos/cuarzorosa_suot.webm";
 import granate from "../../assets/videos/granate_suot.webm";
-import turquesa from "../../assets/videos/turquesa_suot.webm";
 
 import greenAgate from "../../assets/videos/agata_verde.webm";
 import cisoprasa from "../../assets/videos/crisoprasa_2.webm";
@@ -43,12 +41,12 @@ export const gemstoneResult = {
 
 export const gemstoneVideoResult = {
   AQUARIUS: amatista,
-  VIRGO: citrino, //carnelian  -- NO LO TENGO
+  VIRGO: coralina, 
   CANCER: aventurina,
-  SCORPIO: aguaMarina, //topaz -- NO LO TENGO
-  ARIES: coralina, //ruby -- NO LO TENGO
+  SCORPIO: aguaMarina,
+  ARIES: lemonQuartz,
   PISCES: cisoprasa,
-  SAGITTARIUS: turquesa, //pink opal -- NO LO TENGO
+  SAGITTARIUS: cuarzorosa,
   GEMINI: tumalinatedQuartz,
   LIBRA: citrino,
   LEO: cuarzorosa,
