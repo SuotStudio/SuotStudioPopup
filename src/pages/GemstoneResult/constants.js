@@ -1,4 +1,3 @@
-import agataAzul from "../../assets/videos/agata_azul_suot.webm";
 import aguaMarina from "../../assets/videos/aguamarina_suot.webm";
 import amatista from "../../assets/videos/amatista_suot.webm";
 import aventurina from "../../assets/videos/aventurina_suot.webm";
@@ -7,30 +6,25 @@ import coralina from "../../assets/videos/coralina_suot.webm";
 import cuarzo from "../../assets/videos/cuarzo_ahumado_suot.webm";
 import cuarzorosa from "../../assets/videos/cuarzorosa_suot.webm";
 import granate from "../../assets/videos/granate_suot.webm";
-import lapislazuli from "../../assets/videos/lapislazuli_suot.webm";
-import piedraluna from "../../assets/videos/piedraluna_suot.webm";
 import turquesa from "../../assets/videos/turquesa_suot.webm";
-
 
 import greenAgate from "../../assets/videos/agata_verde.webm";
 import cisoprasa from "../../assets/videos/crisoprasa_2.webm";
-import tumalinatedQuartz  from "../../assets/videos/cuarzo_turmalinado_2.webm";
+import tumalinatedQuartz from "../../assets/videos/cuarzo_turmalinado_2.webm";
 import lemonQuartz from "../../assets/videos/lemon_quartz.webm";
 
-
-
-import amethystPNG from "../../assets/stones/ticketStones/amatista.png";
-import aquamarinePNG from "../../assets/stones/ticketStones/aguaMarina.png";
-import aventurinePNG from "../../assets/stones/ticketStones/aventurina.png";
-import blueAgatePNG from "../../assets/stones/ticketStones/agataAzul.png";
-import carnelianPNG from "../../assets/stones/ticketStones/coralina.png";
-import citrineVPNG from "../../assets/stones/ticketStones/citrino.png";
-import garnetPNG from "../../assets/stones/ticketStones/granate.png";
-import lapislazuliPNG from "../../assets/stones/ticketStones/lapislazuli.png";
-import moonstonePNG from "../../assets/stones/ticketStones/piedraLuna.png";
-import pinkQuartzPNG from "../../assets/stones/ticketStones/cuarzoRosa.png";
-import smokyQuartzPNG from "../../assets/stones/ticketStones/cuarzoAhumado.png";
-import turquoisePNG from "../../assets/stones/ticketStones/turquesa.png";
+import amethyst2PNG from "../../assets/stones/amethyst2.png";
+import aventurinePNG from "../../assets/stones/aventurine.png";
+import carnelianPNG from "../../assets/stones/carnelian.png";
+import chrysoprasePNG from "../../assets/stones/chrysoprase.webp";
+import citrineVPNG from "../../assets/stones/citrine.png";
+import garnetPNG from "../../assets/stones/garnet.png";
+import greenAgatePNG from "../../assets/stones/green_Agate.webp";
+import pinkOpalPNG from "../../assets/stones/pink_opal.png";
+import pinkQuartzPNG from "../../assets/stones/pink_quartz.webp";
+import rubyPNG from "../../assets/stones/ruby.webp";
+import topazPNG from "../../assets/stones/topaz.webp";
+import tourmalinatedQuartzPNG from "../../assets/stones/tourmalinatez_quartz.webp";
 
 export const gemstoneResult = {
   AQUARIUS: "AMETHYST",
@@ -38,10 +32,10 @@ export const gemstoneResult = {
   CANCER: "AVENTURINE",
   SCORPIO: "TOPAZ",
   ARIES: "RUBY",
-  PISCES: "CRISOPRASA",
+  PISCES: "CRHYSOPRASE",
   SAGITTARIUS: "PINK OPAL",
   GEMINI: "TUMALINATED QUARTZ",
-  LIBRA: "CITRINO",
+  LIBRA: "CITRINE",
   LEO: "PINK QUARTZ",
   TAURUS: "GREEN AGATE",
   CAPRICORN: "GARNET",
@@ -49,31 +43,31 @@ export const gemstoneResult = {
 
 export const gemstoneVideoResult = {
   AQUARIUS: amatista,
-  VIRGO: citrino,
+  VIRGO: citrino, //carnelian  -- NO LO TENGO
   CANCER: aventurina,
-  SCORPIO: aguaMarina,
-  ARIES: coralina,
+  SCORPIO: aguaMarina, //topaz -- NO LO TENGO
+  ARIES: coralina, //ruby -- NO LO TENGO
   PISCES: cisoprasa,
-  SAGITTARIUS: turquesa,
+  SAGITTARIUS: turquesa, //pink opal -- NO LO TENGO
   GEMINI: tumalinatedQuartz,
-  LIBRA: lapislazuli,
+  LIBRA: citrino,
   LEO: cuarzorosa,
   TAURUS: greenAgate,
-  CAPRICORN: lemonQuartz,
+  CAPRICORN: granate,
 };
 
 export const gemstoneResultImgToPrint = {
-  AQUARIUS: amethystPNG,
+  AQUARIUS: amethyst2PNG,
   VIRGO: carnelianPNG,
   CANCER: aventurinePNG,
-  SCORPIO: aquamarinePNG,
-  ARIES: carnelianPNG,
-  PISCES: aquamarinePNG,
-  SAGITTARIUS: pinkQuartzPNG,
-  GEMINI: blueAgatePNG,
+  SCORPIO: topazPNG,
+  ARIES: rubyPNG,
+  PISCES: chrysoprasePNG,
+  SAGITTARIUS: pinkOpalPNG,
+  GEMINI: tourmalinatedQuartzPNG,
   LIBRA: citrineVPNG,
   LEO: pinkQuartzPNG,
-  TAURUS: aventurinePNG,
+  TAURUS: greenAgatePNG,
   CAPRICORN: garnetPNG,
 };
 
