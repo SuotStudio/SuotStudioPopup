@@ -43,6 +43,10 @@
         margin-bottom: 3rem;
     }
 
+    .home__spaceContainer{
+        top: 65%;
+    }
+
     .home__button {
         font-size: 35px;
     }
@@ -53,6 +57,10 @@
     .home__title{
         font-size: 50px;
         margin-bottom: 3rem;
+    }
+
+    .home__spaceContainer{
+        top: 65%;
     }
 
     .home__button {
