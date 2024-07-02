@@ -30,7 +30,7 @@ const ContactDetails = () => {
       align="middle"
       className={styles.contactDetails__container}
     >
-      <Col span={10}>
+      <Col xl={10} md={12} xs={22}>
         <h2 className={styles.contactDetails__title}>Who are you?</h2>
         <Formik
           initialValues={{

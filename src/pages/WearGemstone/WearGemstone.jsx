@@ -22,7 +22,7 @@ const WearGemstone = () => {
       align="middle"
       className={styles.wearGemstone__container}
     >
-      <Col span={20}>
+      <Col xl={20} md={20} xs={22}>
         <h2 className={styles.wearGemstone__title}>Wear your gemstone</h2>
 
         <Row gutter={8}>

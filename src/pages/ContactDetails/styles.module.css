@@ -50,3 +50,27 @@
     width: 100%;
 }
 
+
+
+
+/* Tablets */
+@media (max-width: 1279px) {
+    .contactDetails__title{
+        font-size: 50px;
+    }
+
+    .contactDetails__input{
+        padding: 0;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    .contactDetails__title{
+        font-size: 40px;
+    }
+
+    .contactDetails__input{
+        padding: 0;
+    }
+}

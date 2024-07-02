@@ -25,7 +25,7 @@ const Elements = () => {
       align="middle"
       className={styles.elements__container}
     >
-      <Col span={20}>
+      <Col xl={20} md={20} xs={22}>
         <h2 className={styles.elements__title}>
           Which of the four elements are you most attuned to?
         </h2>

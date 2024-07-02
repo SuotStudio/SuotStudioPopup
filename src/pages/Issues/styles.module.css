@@ -17,3 +17,28 @@
 .issues__row button:hover{
     background-color: #000;
 }
+
+
+/* Tablets */
+@media (max-width: 1279px) {
+    .issues__title{
+        font-size: 50px;
+    }
+
+    .issues__row button{
+        min-width: 100%;
+        font-size: 45px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    .issues__title{
+        font-size: 40px;
+    }
+
+    .issues__row button{
+        min-width: 100%;
+        font-size: 35px;
+    }
+}

@@ -61,3 +61,28 @@
 .gemstoneResult__descriptionFalse{
     display: none;
 }
+
+
+/* Tablets */
+@media (max-width: 1279px) {
+    .gemstoneResult__title{
+        font-size: 50px;
+    }
+
+    .gemstoneResult__button{
+        background: #fff;
+        color: #000;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    .gemstoneResult__title{
+        font-size: 50px;
+    }
+
+    .gemstoneResult__button{
+        background: #fff;
+        color: #000;
+    }
+}

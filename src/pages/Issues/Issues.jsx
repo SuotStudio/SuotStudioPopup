@@ -25,7 +25,7 @@ const Issues = () => {
       align="middle"
       className={styles.issues__container}
     >
-      <Col span={20}>
+      <Col xl={20} md={20} xs={22}>
         <h2 className={styles.issues__title}>
           What issues have you been focusing on lately?
         </h2>

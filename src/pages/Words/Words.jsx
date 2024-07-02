@@ -1,4 +1,4 @@
-import { Button, Checkbox, Col, Row, Space } from "antd";
+import { Button, Checkbox, Col, Row } from "antd";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -85,7 +85,7 @@ const Words = () => {
         </Row>
         {activeWords.length > 0 && (
           <Row justify="center">
-            <Col span={6}>
+            <Col xl={6} md={12} xs={12}>
               <Button
                 type="primary"
                 className={styles.continue__button}

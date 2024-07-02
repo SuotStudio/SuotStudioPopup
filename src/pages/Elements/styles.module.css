@@ -17,3 +17,27 @@
 .elements__row button:hover{
     background-color: #000;
 }
+
+/* Tablets */
+@media (max-width: 1279px) {
+    .elements__title{
+        font-size: 50px;
+    }
+
+    .elements__row button{
+        min-width: 100%;
+        font-size: 45px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 599px) {
+    .elements__title{
+        font-size: 40px;
+    }
+
+    .elements__row button{
+        min-width: 100%;
+        font-size: 35px;
+    }
+}
