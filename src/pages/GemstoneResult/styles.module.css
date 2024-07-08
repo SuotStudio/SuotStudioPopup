@@ -97,6 +97,9 @@
         font-size: 20px;
     }
 
+    span{
+        font-size: 25px;
+    }
 
     .gemstoneResult__button{
         background: #fff;
