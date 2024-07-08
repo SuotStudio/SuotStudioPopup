@@ -5,6 +5,7 @@
 .issues__title{
     font-size: 70px;
     margin-bottom: 3rem;
+    font-weight: 300;
 }
 
 .issues__row button{

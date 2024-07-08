@@ -5,6 +5,7 @@
 .words__title{
     font-size: 60px;
     margin-bottom: 3rem;
+    font-weight: 300;
 }
 
 .wordsSection__buttons button{

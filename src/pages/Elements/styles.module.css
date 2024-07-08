@@ -5,6 +5,7 @@
 .elements__title{
     font-size: 70px;
     margin-bottom: 3rem;
+    font-weight: 300;
 }
 
 .elements__row button{
