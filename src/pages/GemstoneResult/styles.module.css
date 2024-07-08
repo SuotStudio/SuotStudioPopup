@@ -86,24 +86,20 @@
     }
 
     .gemstoneResult__result p{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .gemstoneResult__result p:nth-child(2){
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .gemstoneResult__action{
-        font-size: 20px;
-    }
-
-    span{
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .gemstoneResult__button{
         background: #fff;
         color: #000;
-        font-size: 20px;
+        font-size: 18px;
     }
 }

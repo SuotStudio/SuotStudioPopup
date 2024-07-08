@@ -77,7 +77,7 @@ const Words = () => {
           })}
         </Row>
         <Row justify="start">
-          <Col span={24}>
+          <Col span={24} className={styles.section__checkbox}>
             <Checkbox style={{ fontSize: "32px" }} onChange={handleOnSelectAll}>
               All of the above
             </Checkbox>

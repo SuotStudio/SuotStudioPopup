@@ -75,17 +75,17 @@
     }
 
     label{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contactDetails__input{
         padding: 0;
         min-height: 3rem;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contactDetails__submitButton{
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 15px;
     }
 }
