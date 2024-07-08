@@ -55,6 +55,7 @@
 @media (max-width: 599px) {
     .words__title{
         font-size: 25px;
+        font-weight: 300;
     }
 
     .wordsSection__buttons button{

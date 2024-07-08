@@ -79,6 +79,7 @@
 @media (max-width: 599px) {
     .gemstoneResult__title{
         font-size: 25px;
+        font-weight: 300;
     }
 
     .gemstoneResult__result{

@@ -34,6 +34,7 @@
 @media (max-width: 599px) {
     .elements__title{
         font-size: 25px;
+        font-weight: 300;
     }
 
     .elements__row button{

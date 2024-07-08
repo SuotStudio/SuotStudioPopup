@@ -35,6 +35,7 @@
 @media (max-width: 599px) {
     .issues__title{
         font-size: 25px;
+        font-weight: 300;
     }
 
     .issues__row button{

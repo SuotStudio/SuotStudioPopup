@@ -36,6 +36,7 @@
 @media (max-width: 599px) {
     .wearGemstone__title{
         font-size: 25px;
+        font-weight: 300;
     }
 
     .wearGemstone__row button{
