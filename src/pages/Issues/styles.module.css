@@ -34,11 +34,15 @@
 /* Mobiles */
 @media (max-width: 599px) {
     .issues__title{
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .issues__row button{
         min-width: 100%;
-        font-size: 35px;
+        font-size: 20px;
+    }
+
+    .issues__row{
+        row-gap: 10px;
     }
 }

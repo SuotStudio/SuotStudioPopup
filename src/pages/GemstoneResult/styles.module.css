@@ -78,11 +78,29 @@
 /* Mobiles */
 @media (max-width: 599px) {
     .gemstoneResult__title{
-        font-size: 50px;
+        font-size: 25px;
     }
+
+    .gemstoneResult__result{
+        margin-bottom: 1rem;
+    }
+
+    .gemstoneResult__result p{
+        font-size: 20px;
+    }
+
+    .gemstoneResult__result p:nth-child(2){
+        font-size: 20px;
+    }
+
+    .gemstoneResult__action{
+        font-size: 20px;
+    }
+
 
     .gemstoneResult__button{
         background: #fff;
         color: #000;
+        font-size: 20px;
     }
 }

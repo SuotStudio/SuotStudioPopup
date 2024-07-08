@@ -67,10 +67,25 @@
 /* Mobiles */
 @media (max-width: 599px) {
     .contactDetails__title{
-        font-size: 40px;
+        font-size: 25px;
+    }
+
+    .contactDetails__formItem{
+        margin-bottom: 0;
+    }
+
+    label{
+        font-size: 20px;
     }
 
     .contactDetails__input{
         padding: 0;
+        min-height: 3rem;
+        font-size: 20px;
+    }
+
+    .contactDetails__submitButton{
+        font-size: 20px;
+        margin-top: 15px;
     }
 }

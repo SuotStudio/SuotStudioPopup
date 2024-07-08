@@ -55,7 +55,7 @@
 /* Mobiles */
 @media (max-width: 599px) {
     .home__title{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 3rem;
     }
 
@@ -64,6 +64,6 @@
     }
 
     .home__button {
-        font-size: 30px;
+        font-size: 20px;
     }
 }

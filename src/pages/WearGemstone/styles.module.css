@@ -35,11 +35,11 @@
 /* Mobiles */
 @media (max-width: 599px) {
     .wearGemstone__title{
-        font-size: 50px;
+        font-size: 25px;
     }
 
     .wearGemstone__row button{
         min-width: 0;
-        font-size: 35px;
+        font-size: 20px;
     }
 }
