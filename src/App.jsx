@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Issues from "./pages/Issues";
 import Elements from "./pages/Elements";
@@ -10,8 +10,13 @@ import WearGemstone from "./pages/WearGemstone";
 import "./App.css";
 
 function App() {
+  const location = useLocation();
+
+  const isPrintStep = location?.pathname.includes("/wear-gemstone");
+
+  console.log("LOCATION", location, isPrintStep);
   return (
-    <main className="main__container">
+    <main className={isPrintStep ? "step__container" : "main__container"}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/issues" element={<Issues />} />

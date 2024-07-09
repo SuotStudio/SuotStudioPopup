@@ -22,3 +22,8 @@
   height: 100vh;
   overflow: hidden;
 }
+
+.step__container{
+  height: 100vh;
+  overflow: scroll;
+}
