@@ -5,8 +5,8 @@ export default async function handler(req, res) {
     const { email, phone } = req.body;
 
     // Asegúrate de tener la clave API correcta
-    const apiKey = 'TU_CLAVE_API_PRIVADA';
-    const listId = 'TU_ID_DE_LISTA';
+    const apiKey = 'pk_942208a1ccfdbd9b4eeee6f73fa5fac7e4';
+    const listId = 'TKuJyq';
 
     const url = `https://a.klaviyo.com/api/v2/list/${listId}/members`;
 
@@ -18,6 +18,8 @@ export default async function handler(req, res) {
         },
       ],
     };
+
+    console
 
     try {
       const response = await fetch(url, {
