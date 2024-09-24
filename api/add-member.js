@@ -10,14 +10,14 @@ export default async function handler(req, res) {
     // URL de la nueva API para añadir miembros a la lista
     const url = `https://a.klaviyo.com/api/v2/list/${listId}/subscribe`;
 
-    const data = {
-        profiles: [
-          {
-            email: email,
-            phone_number: phone,
-          },
-        ],
-      };
+    // const data = {
+    //     profiles: [
+    //       {
+    //         email: email,
+    //         phone_number: phone,
+    //       },
+    //     ],
+    //   };
   
 
     try {
