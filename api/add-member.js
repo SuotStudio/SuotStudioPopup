@@ -2,27 +2,41 @@ import fetch from "node-fetch";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { email, phone, firstName } = req.body; // Asegúrate de que envías `firstName` en la solicitud
+    const { email, phone } = req.body; // Asegúrate de que envías el correo y el teléfono
 
     const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
     const listId = "TKuJyq";
 
-    const url = `https://a.klaviyo.com/api/profiles/`;
+    const url = `https://a.klaviyo.com/api/profile-subscription-bulk-create-jobs/`;
 
     const data = {
       data: {
-        type: "profile",
+        type: "profile-subscription-bulk-create-job",
         attributes: {
-          properties: {
-            /* puedes añadir más propiedades aquí si es necesario */
+          profiles: {
+            data: [
+              {
+                type: "profile",
+                attributes: {
+                  subscriptions: {
+                    email: { marketing: { consent: "SUBSCRIBED" } },
+                    sms: { marketing: { consent: "SUBSCRIBED" } },
+                  },
+                  email: email, // Correo electrónico a suscribir
+                  phone_number: phone, // Opcional: número de teléfono
+                },
+              },
+            ],
           },
-          email: email,
-          first_name: firstName,
+          historical_import: false,
+        },
+        relationships: {
+          list: { data: { type: "list", id: listId } },
         },
       },
     };
 
-    console.log("URL", url, data);
+    console.log("URL", url, data); // Para depuración
 
     try {
       const response = await fetch(url, {
@@ -31,13 +45,13 @@ export default async function handler(req, res) {
           Accept: "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
           "Content-Type": "application/json",
-          revision: "2024-07-15", // Usa la fecha actual en formato YYYY-MM-DD
+          revision: "2024-07-15", // Fecha actual en formato YYYY-MM-DD
         },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        return res.status(200).json({ message: "Perfil añadido con éxito" });
+        return res.status(200).json({ message: "Perfil suscrito con éxito" });
       } else {
         const errorData = await response.json();
         console.error("Error de Klaviyo:", errorData); // Log de error
