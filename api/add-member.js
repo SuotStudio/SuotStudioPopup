@@ -25,10 +25,6 @@ export default async function handler(req, res) {
       },
     };
 
-    // Obtén la fecha actual en formato YYYY-MM-DD
-    const today = new Date();
-    const formattedDate = today.toISOString().split("T")[0]; // Obtiene la fecha actual en el formato correcto
-
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -36,7 +32,7 @@ export default async function handler(req, res) {
           Accept: "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
           "Content-Type": "application/json",
-          REVISION: formattedDate, // Agrega el encabezado REVISION
+          revision: '2024-09-24'
         },
         body: JSON.stringify(data),
       });
