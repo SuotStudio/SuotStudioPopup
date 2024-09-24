@@ -5,12 +5,10 @@ export default async function handler(req, res) {
     const { email, phone } = req.body;
 
     // Asegúrate de tener la clave API correcta
-    // const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
-    const apiKey = "XmhvFa";
-
+    const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
     const listId = "TKuJyq";
 
-    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members`;
+    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members?api_key=${apiKey}`;
 
     const data = {
       profiles: [
