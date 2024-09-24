@@ -6,9 +6,6 @@ import * as Yup from "yup";
 import { addUserContactDetails } from "../../store/slices/userContactDetails";
 import styles from "./styles.module.css";
 
-const PRIVATE_KEY = "pk_942208a1ccfdbd9b4eeee6f73fa5fac7e4";
-const NEWSLETTER_LIST_ID = "TKuJyq";
-
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -26,35 +23,30 @@ const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleOnCreateSuscriptor = async (email, phoneNumber) => {
-    const url = `https://a.klaviyo.com/api/v2/list/${NEWSLETTER_LIST_ID}/members`;
+  const handleOnCreateSuscriptor = async (email, phone) => {
 
     const data = {
-      profiles: [
-        {
-          email: email,
-          phone_number: phoneNumber,
-        },
-      ],
+      email: email,
+      phone: phone,
     };
 
     try {
-      const response = await fetch(url, {
-        method: "POST",
+      const response = await fetch('https://www.suotstudiopopup.com/backend/add-member', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${PRIVATE_KEY}`,
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        console.log("Perfil añadido con éxito");
+        console.log('Perfil añadido con éxito');
+        // Opcional: puedes mostrar un mensaje de éxito al usuario o resetear el formulario
       } else {
-        console.error("Error al añadir el perfil");
+        console.error('Error al añadir el perfil');
       }
     } catch (error) {
-      console.error("Error en la solicitud:", error);
+      console.error('Error en la solicitud:', error);
     }
   };
 
