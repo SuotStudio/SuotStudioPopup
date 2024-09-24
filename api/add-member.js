@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const listId = "TKuJyq";
 
     // URL de la nueva API para añadir miembros a la lista
-    const url = `https://a.klaviyo.com/api/v1/list/${listId}/members/`;
+    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members`;
 
     const data = {
       data: {
