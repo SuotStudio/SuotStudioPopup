@@ -26,7 +26,7 @@ const ContactDetails = () => {
   const handleOnCreateSuscriptor = async (email, phone) => {
     const data = {
       email: email,
-      phone: +34777665544,
+      phone: "+34777665544",
     };
 
     try {
