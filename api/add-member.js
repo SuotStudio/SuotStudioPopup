@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { email, phone } = req.body; // Asegúrate de que envías el correo y el teléfono
+    const { email } = req.body; // Asegúrate de que envías el correo y el teléfono
 
     const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
     const listId = "TKuJyq";
@@ -20,10 +20,8 @@ export default async function handler(req, res) {
                 attributes: {
                   subscriptions: {
                     email: { marketing: { consent: "SUBSCRIBED" } },
-                    sms: { marketing: { consent: "SUBSCRIBED" } },
                   },
-                  email: email, // Correo electrónico a suscribir
-                  phone_number: phone, // Opcional: número de teléfono
+                  email: email,
                 },
               },
             ],

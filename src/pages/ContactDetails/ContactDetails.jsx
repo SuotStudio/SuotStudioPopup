@@ -23,10 +23,10 @@ const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleOnCreateSuscriptor = async (email, phone) => {
+  const handleOnCreateSuscriptor = async (email) => {
     const data = {
       email: email,
-      phone: "+34777665544",
+
     };
 
     try {
