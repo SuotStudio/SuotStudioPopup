@@ -6,6 +6,9 @@ import * as Yup from "yup";
 import { addUserContactDetails } from "../../store/slices/userContactDetails";
 import styles from "./styles.module.css";
 
+const PRIVATE_KEY = "pk_942208a1ccfdbd9b4eeee6f73fa5fac7e4";
+const NEWSLETTER_LIST_ID = "TKuJyq";
+
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -22,6 +25,38 @@ const ContactSchema = Yup.object().shape({
 const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const handleOnCreateSuscriptor = async (email, phoneNumber) => {
+    const url = `https://a.klaviyo.com/api/v2/list/${NEWSLETTER_LIST_ID}/members`;
+
+    const data = {
+      profiles: [
+        {
+          email: email,
+          phone_number: phoneNumber,
+        },
+      ],
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${PRIVATE_KEY}`,
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        console.log("Perfil añadido con éxito");
+      } else {
+        console.error("Error al añadir el perfil");
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+    }
+  };
 
   return (
     <Row
@@ -43,6 +78,7 @@ const ContactDetails = () => {
           autoComplete={false}
           onSubmit={(values) => {
             console.log(values);
+            handleOnCreateSuscriptor(values.email, values.phone);
             dispatch(
               addUserContactDetails({
                 name: values.firstName,
