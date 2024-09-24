@@ -12,20 +12,22 @@ export default async function handler(req, res) {
 
     const data = {
       data: {
-        type: "profile", 
+        type: "profile",
         attributes: {
           email: email,
           phone_number: phone,
         },
         relationships: {
           list: {
-            data: [
-              { id: listId, type: "list" }, 
-            ],
+            data: [{ id: listId, type: "list" }],
           },
         },
       },
     };
+
+    // Obtén la fecha actual en formato YYYY-MM-DD
+    const today = new Date();
+    const formattedDate = today.toISOString().split("T")[0]; // Obtiene la fecha actual en el formato correcto
 
     try {
       const response = await fetch(url, {
@@ -34,6 +36,7 @@ export default async function handler(req, res) {
           Accept: "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
           "Content-Type": "application/json",
+          REVISION: formattedDate, // Agrega el encabezado REVISION
         },
         body: JSON.stringify(data),
       });
