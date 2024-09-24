@@ -23,30 +23,30 @@ const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleOnCreateSuscriptor = async (email, phone) => {
-
+  const handleOnCreateSuscriptor = async (email, phone, firstName) => {
     const data = {
       email: email,
       phone: phone,
+      firstName: firstName,
     };
 
     try {
-      const response = await fetch('/api/add-member', {
-        method: 'POST',
+      const response = await fetch("/api/add-member", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        console.log('Perfil añadido con éxito');
+        console.log("Perfil añadido con éxito");
         // Opcional: puedes mostrar un mensaje de éxito al usuario o resetear el formulario
       } else {
-        console.error('Error al añadir el perfil');
+        console.error("Error al añadir el perfil");
       }
     } catch (error) {
-      console.error('Error en la solicitud:', error);
+      console.error("Error en la solicitud:", error);
     }
   };
 

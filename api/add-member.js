@@ -2,20 +2,28 @@ import fetch from "node-fetch";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { email, phone } = req.body;
+    const { email, phone, firstName } = req.body; // Asegúrate de que envías `firstName` en la solicitud
 
     const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
     const listId = "TKuJyq";
 
-    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members`;
+    const url = `https://a.klaviyo.com/api/profiles/`;
 
     const data = {
-      profiles: [{ email, phone_number: phone }],
+      data: {
+        type: "profile",
+        attributes: {
+          properties: {
+            /* puedes añadir más propiedades aquí si es necesario */
+          },
+          email: email,
+          phone_number: phone,
+          first_name: firstName,
+        },
+      },
     };
 
-
-      console.log("URL", url, data);
-  
+    console.log("URL", url, data);
 
     try {
       const response = await fetch(url, {
@@ -24,9 +32,9 @@ export default async function handler(req, res) {
           Accept: "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
           "Content-Type": "application/json",
-          revision: "2024-09-24", // Usar la fecha actual en formato YYYY-MM-DD
+          revision: "2024-07-15", // Usa la fecha actual en formato YYYY-MM-DD
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
