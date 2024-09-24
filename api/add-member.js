@@ -7,8 +7,8 @@ export default async function handler(req, res) {
     const apiKey = "pk_44fefcc04d447ec722b728c58f9d5583b2";
     const listId = "TKuJyq";
 
-    // URL de la nueva API
-    const url = `https://a.klaviyo.com/api/events/`;
+    // URL de la nueva API para añadir miembros a la lista
+    const url = `https://a.klaviyo.com/api/v1/list/${listId}/members/`;
 
     const data = {
       data: {
@@ -16,11 +16,6 @@ export default async function handler(req, res) {
         attributes: {
           email: email,
           phone_number: phone,
-        },
-        relationships: {
-          list: {
-            data: [{ id: listId, type: "list" }],
-          },
         },
       },
     };
@@ -32,7 +27,7 @@ export default async function handler(req, res) {
           Accept: "application/json",
           Authorization: `Klaviyo-API-Key ${apiKey}`,
           "Content-Type": "application/json",
-          revision: '2024-09-24'
+          revision: "2024-09-24", // Usar la fecha actual en formato YYYY-MM-DD
         },
         body: JSON.stringify(data),
       });
