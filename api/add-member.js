@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
+          'Authorization': `Klaviyo-API-Key ${apiKey}`,
         },
         body: JSON.stringify(data),
       });
