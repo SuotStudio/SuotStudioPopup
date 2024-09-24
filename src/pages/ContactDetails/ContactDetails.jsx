@@ -31,7 +31,7 @@ const ContactDetails = () => {
     };
 
     try {
-      const response = await fetch('https://www.suotstudiopopup.com/backend/add-member', {
+      const response = await fetch('/api/add-member', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
