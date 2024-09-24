@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const listId = "TKuJyq";
 
     // URL de la nueva API para añadir miembros a la lista
-    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members/?api_key=${apiKey}`;
+    const url = `https://a.klaviyo.com/api/v2/list/${listId}/subscribe`;
 
     const data = {
         profiles: [
@@ -29,7 +29,12 @@ export default async function handler(req, res) {
           "Content-Type": "application/json",
           revision: "2024-09-24", // Usar la fecha actual en formato YYYY-MM-DD
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+            profiles: [
+              {email: 'george.washington@pruaba.com'},
+              {phone_number: '+13239169023'}
+            ]
+          })
       });
 
       if (response.ok) {
