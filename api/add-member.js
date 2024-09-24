@@ -8,17 +8,17 @@ export default async function handler(req, res) {
     const listId = "TKuJyq";
 
     // URL de la nueva API para añadir miembros a la lista
-    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members`;
+    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members/?api_key=${apiKey}`;
 
     const data = {
-      data: {
-        type: "profile",
-        attributes: {
-          email: email,
-          phone_number: phone,
-        },
-      },
-    };
+        profiles: [
+          {
+            email: email,
+            phone_number: phone,
+          },
+        ],
+      };
+  
 
     try {
       const response = await fetch(url, {
