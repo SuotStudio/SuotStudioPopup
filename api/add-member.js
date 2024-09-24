@@ -31,8 +31,8 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
             profiles: [
-              {email: 'george.washington@pruaba.com'},
-              {phone_number: '+13239169023'}
+              {email: email},
+              {phone_number: phone}
             ]
           })
       });
