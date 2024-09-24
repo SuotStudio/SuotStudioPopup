@@ -17,7 +17,6 @@ export default async function handler(req, res) {
             /* puedes añadir más propiedades aquí si es necesario */
           },
           email: email,
-          phone_number: phone,
           first_name: firstName,
         },
       },
