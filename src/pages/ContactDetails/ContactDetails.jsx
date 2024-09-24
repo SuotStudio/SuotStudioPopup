@@ -79,16 +79,16 @@ const ContactDetails = () => {
           onSubmit={(values) => {
             console.log(values);
             handleOnCreateSuscriptor(values.email, values.phone);
-            dispatch(
-              addUserContactDetails({
-                name: values.firstName,
-                email: values.email,
-                phone: values.phone,
-                city: values.city,
-              })
-            );
+            // dispatch(
+            //   addUserContactDetails({
+            //     name: values.firstName,
+            //     email: values.email,
+            //     phone: values.phone,
+            //     city: values.city,
+            //   })
+            // );
 
-            navigate("/horoscope");
+            // navigate("/horoscope");
           }}
         >
           {({ errors, touched }) => (
