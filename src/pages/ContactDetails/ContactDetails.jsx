@@ -23,10 +23,10 @@ const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const handleOnCreateSuscriptor = async (email) => {
+  const handleOnCreateSuscriptor = async (email, city) => {
     const data = {
       email: email,
-
+      location: city,
     };
 
     try {
@@ -69,7 +69,7 @@ const ContactDetails = () => {
           autoComplete={false}
           onSubmit={(values) => {
             console.log(values);
-            handleOnCreateSuscriptor(values.email, values.phone);
+            handleOnCreateSuscriptor(values.email, values.city);
             dispatch(
               addUserContactDetails({
                 name: values.firstName,
