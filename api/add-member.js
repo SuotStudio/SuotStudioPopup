@@ -11,17 +11,22 @@ export default async function handler(req, res) {
 
     const data = {
       data: {
-        type: "profile",
+        type: "profile-subscription-bulk-create-job",
         attributes: {
-          location: { address1: location },
-          properties: { newKey: "New Value" },
-          email: email,
-        },
-        meta: {
-          patch_properties: {
-            append: { newKey: "New Value" },
-            unappend: { newKey: "New Value" },
+          profiles: {
+            data: [
+              {
+                type: "profile",
+                attributes: {
+                  subscriptions: {
+                    email: { marketing: { consent: "SUBSCRIBED" } },
+                  },
+                  email: email,
+                },
+              },
+            ],
           },
+          historical_import: false,
         },
         relationships: {
           list: { data: { type: "list", id: listId } },
