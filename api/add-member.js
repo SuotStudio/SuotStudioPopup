@@ -22,7 +22,9 @@ export default async function handler(req, res) {
                     email: { marketing: { consent: "SUBSCRIBED" } },
                   },
                   email: email,
-                  location: location,
+                  custom_properties: {
+                    location: location,
+                  },
                 },
               },
             ],
