@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   const handleGoBack = () => {
-    navigate(-1);
+    navigate(`/${currentLanguage || "en"}/`);
   };
 
   return (
