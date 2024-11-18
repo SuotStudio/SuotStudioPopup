@@ -12,6 +12,7 @@ const Header = () => {
     location.pathname === "/es/" || location.pathname === "/en/";
 
   const isWearLocation =
+    location.pathname === "/" ||
     location.pathname === "/en/wear-gemstone" ||
     location.pathname === "/es/wear-gemstone";
 
@@ -22,7 +23,6 @@ const Header = () => {
   const handleGoBack = () => {
     navigate(-1);
   };
-
 
   return (
     <header
