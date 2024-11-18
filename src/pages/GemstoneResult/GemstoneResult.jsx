@@ -3,9 +3,13 @@ import { Button, Col, Row, Space } from "antd";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {
+  esGemstoneResult,
   gemstoneResult,
+  esGemstoneResultImgToPrint,
   gemstoneResultImgToPrint,
+  esGemstoneResultToPrint,
   gemstoneResultToPrint,
+  esGemstoneVideoResult,
   gemstoneVideoResult,
 } from "./constants";
 // import qz from "qz-tray";
@@ -13,12 +17,16 @@ import { useReactToPrint } from "react-to-print";
 import logoSuotStudio from "../../assets/logoSuotStudio.png";
 import styles from "./styles.module.css";
 import { supabase } from "../../supabase";
+import { useTranslation } from "react-i18next";
 
 const GemstoneResult = () => {
   const navigate = useNavigate();
   const userOptions = useSelector((state) => state);
   const videoRef = useRef(null);
   const componentRef = useRef();
+  const [t, i18n] = useTranslation("global");
+
+  const currentLanguage = i18n.language;
 
   useEffect(() => {
     if (videoRef.current) {
@@ -28,7 +36,7 @@ const GemstoneResult = () => {
 
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
-    onAfterPrint: () => navigate("/wear-gemstone"),
+    onAfterPrint: () => navigate(`/${currentLanguage}/wear-gemstone`),
   });
 
   const handleCreateUser = async () => {
@@ -101,7 +109,11 @@ const GemstoneResult = () => {
             className={styles.gemstoneResult__video}
           >
             <source
-              src={gemstoneVideoResult[userOptions?.userOptions.horoscope]}
+              src={
+                currentLanguage === "en"
+                  ? gemstoneVideoResult[userOptions?.userOptions.horoscope]
+                  : esGemstoneVideoResult[userOptions?.userOptions.horoscope]
+              }
               type="video/webm"
             />
             Tu navegador no soporta el elemento de video.
@@ -112,17 +124,21 @@ const GemstoneResult = () => {
           >
             <h2 className={styles.gemstoneResult__title}>SUOT STUDIO</h2>
             <div className={styles.gemstoneResult__result}>
-              <p>Your gemstone is</p>
-              <p>{gemstoneResult[userOptions?.userOptions.horoscope]}</p>
+              <p>{t("gemstoneResult.title")}</p>
+              <p>
+                {currentLanguage === "en"
+                  ? gemstoneResult[userOptions?.userOptions.horoscope]
+                  : esGemstoneResult[userOptions?.userOptions.horoscope]}
+              </p>
             </div>
             <div className={styles.gemstoneResult__action}>
-              <p>DISCOVER MORE</p>
+              <p>{t("gemstoneResult.discover")}</p>
               <Button
                 className={styles.gemstoneResult__button}
                 type="primary"
                 onClick={handlePrint}
               >
-                PRINT
+                {t("gemstoneResult.print")}
               </Button>
             </div>
             <div
@@ -142,18 +158,28 @@ const GemstoneResult = () => {
               <img
                 style={{ width: "100%" }}
                 src={
-                  gemstoneResultImgToPrint[userOptions?.userOptions.horoscope]
+                  currentLanguage === "en"
+                    ? gemstoneResultImgToPrint[
+                        userOptions?.userOptions.horoscope
+                      ]
+                    : esGemstoneResultImgToPrint[
+                        userOptions?.userOptions.horoscope
+                      ]
                 }
                 alt="gemstone img"
               />
               <p>
                 The stone that corresponds to you is:{" "}
                 <strong>
-                  {gemstoneResult[userOptions?.userOptions.horoscope]}
+                  {currentLanguage === "en"
+                    ? gemstoneResult[userOptions?.userOptions.horoscope]
+                    : gemstoneResult[userOptions?.userOptions.horoscope]}
                 </strong>
               </p>
               <p style={{ marginBottom: "20px" }}>
-                {gemstoneResultToPrint[userOptions?.userOptions.horoscope]}
+                {currentLanguage === "en"
+                  ? gemstoneResultToPrint[userOptions?.userOptions.horoscope]
+                  : esGemstoneResultToPrint[userOptions?.userOptions.horoscope]}
               </p>
               <p style={{ marginBottom: "20px", textAlign: "center" }}>
                 <strong>www.suotstudio.com</strong>

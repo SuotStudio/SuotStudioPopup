@@ -1,0 +1,39 @@
+{
+  "home": {
+    "findGemstone": "Find your gemstone"
+  },
+  "issues": {
+    "title": "What issues have you been focusing on lately?"
+  },
+  "elements": {
+    "title": "Which of the four elements are you most attuned to?"
+  },
+  "words": {
+    "title": "With which words do you feel most represented?",
+    "allAbove": "All of the above",
+    "continue": "Continue"
+  },
+  "who": {
+    "title": "Who are you?",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "city": "City",
+    "submit": "Submit"
+  },
+  "horoscope": {
+    "title": "What´s your horoscope sign?"
+  },
+  "gemstoneResult": {
+    "title": "Your gemstone is",
+    "discover": "Discover more",
+    "print": "Print"
+  },
+  "wearGemstone": {
+    "title": "Wear your gemstone",
+    "start": "Start again"
+  },
+  "header": {
+    "title": "Go back"
+  }
+}

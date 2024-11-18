@@ -1,0 +1,34 @@
+.header{
+    position: absolute;
+    top: 10px;
+    color: #000;
+    width: 100%;
+    z-index: 10;
+    text-align: right;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.homeHeader{
+    color: #fff;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    list-style: none;
+    padding-right: 10px;
+
+}
+
+header ul li{
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }

@@ -8,8 +8,10 @@ export const layouts = {
 };
 
 export const issues = ["LOVE", "FINANCES", "HEALTH", "FAMILY", "FRIENDSHIPS"];
+export const esIssues = ["AMOR", "FINANZAS", "SALUD", "FAMILIA", "AMISTADES"];
 
 export const elements = ["FIRE", "WATER", "EARTH", "WIND"];
+export const esElements = ["FUEGO", "AGUA", "TIERRA", "VIENTO"];
 
 export const wordsRepresented = [
   {
@@ -54,6 +56,49 @@ export const wordsRepresented = [
   },
 ];
 
+export const esWordsRepresented = [
+  {
+    id: 1,
+    label: "EMOCIONAL",
+  },
+  {
+    id: 2,
+    label: "DIVERSIÓN",
+  },
+  {
+    id: 3,
+    label: "LÓGICO",
+  },
+  {
+    id: 4,
+    label: "INTELIGENTE",
+  },
+  {
+    id: 5,
+    label: "INTROVERTIDO",
+  },
+  {
+    id: 6,
+    label: "INTIMIDANTE",
+  },
+  {
+    id: 7,
+    label: "LEAL",
+  },
+  {
+    id: 8,
+    label: "CONFIABLE",
+  },
+  {
+    id: 9,
+    label: "HONESTO",
+  },
+  {
+    id: 10,
+    label: "ESTÉTICA",
+  },
+];
+
 export const horoscope = [
   "ARIES",
   "TAURUS",
@@ -67,4 +112,19 @@ export const horoscope = [
   "CAPRICORN",
   "AQUARIUS",
   "PISCES",
+];
+
+export const esHoroscope = [
+  "ARIES",
+  "TAURO",
+  "CÁNCER",
+  "GÉMINIS",
+  "LEO",
+  "VIRGO",
+  "LIBRA",
+  "ESCORPIO",
+  "SAGITARIO",
+  "CAPRICORNIO",
+  "ACUARIO",
+  "PISCIS",
 ];

@@ -1,0 +1,39 @@
+{
+  "home": {
+    "findGemstone": "Encuentra tu piedra preciosa"
+  },
+  "issues": {
+    "title": "¿En qué temas te has centrado últimamente?"
+  },
+  "elements": {
+    "title": "¿Con cuál de los cuatro elementos estás más en sintonía?"
+  },
+  "words": {
+    "title": "¿Con qué palabras te sientes más representado?",
+    "allAbove": "Todo lo anterior",
+    "continue": "Continuar"
+  },
+  "who": {
+    "title": "Quién eres?",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "city": "Ciudad",
+    "submit": "Enviar"
+  },
+  "horoscope": {
+    "title": "¿Cuál es tu signo del horóscopo?"
+  },
+  "gemstoneResult": {
+    "title": "Tu piedra preciosa es",
+    "discover": "Descrubre más",
+    "print": "Imprime"
+  },
+  "wearGemstone": {
+    "title": "Viste tu piedra preciosa",
+    "start": "Volver a empezar"
+  },
+  "header": {
+    "title": "Volver atrás"
+  }
+}

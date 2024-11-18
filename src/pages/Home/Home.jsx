@@ -1,16 +1,21 @@
 import { Button, Col, Row, Space } from "antd";
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import allPieces from "../../assets/videos/allPieces.webm";
 
 import styles from "./styles.module.css";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [t, i18n] = useTranslation("global");
+
+  const currentLanguage = i18n.language;
+
   const videoRef = useRef(null);
 
   const handleOnNavigate = () => {
-    navigate("/issues");
+    navigate(`/${currentLanguage || "en"}/issues`);
   };
 
   useEffect(() => {
@@ -46,7 +51,7 @@ const Home = () => {
               type="primary"
               onClick={handleOnNavigate}
             >
-              FIND YOUR GEMSTONE
+              {t("home.findGemstone").toUpperCase()}
             </Button>
           </Space>
         </Col>

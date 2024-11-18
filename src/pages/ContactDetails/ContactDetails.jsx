@@ -1,5 +1,6 @@
 import { Col, Row, Space } from "antd";
 import { Formik, Form, Field } from "formik";
+import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
@@ -22,6 +23,9 @@ const ContactSchema = Yup.object().shape({
 const ContactDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [t, i18n] = useTranslation("global");
+
+  const currentLanguage = i18n.language;
 
   const handleOnCreateSuscriptor = async (email, city) => {
     const data = {
@@ -57,7 +61,7 @@ const ContactDetails = () => {
       className={styles.contactDetails__container}
     >
       <Col xl={10} md={12} xs={22}>
-        <h2 className={styles.contactDetails__title}>Who are you?</h2>
+        <h2 className={styles.contactDetails__title}>{t("who.title")}</h2>
         <Formik
           initialValues={{
             firstName: "",
@@ -68,7 +72,6 @@ const ContactDetails = () => {
           validationSchema={ContactSchema}
           autoComplete={false}
           onSubmit={(values) => {
-            console.log(values);
             handleOnCreateSuscriptor(values.email, values.city);
             dispatch(
               addUserContactDetails({
@@ -79,7 +82,7 @@ const ContactDetails = () => {
               })
             );
 
-            navigate("/horoscope");
+            navigate(`/${currentLanguage || "en"}/horoscope`);
           }}
         >
           {({ errors, touched }) => (
@@ -90,7 +93,7 @@ const ContactDetails = () => {
                   size={0}
                   className={styles.contactDetails__formItemSpace}
                 >
-                  <label>NAME</label>
+                  <label>{t("who.name")}</label>
                   <Field
                     name="firstName"
                     className={styles.contactDetails__input}
@@ -110,7 +113,7 @@ const ContactDetails = () => {
                   size={0}
                   className={styles.contactDetails__formItemSpace}
                 >
-                  <label>EMAIL</label>
+                  <label>{t("who.email")}</label>
                   <Field
                     name="email"
                     type="email"
@@ -131,7 +134,7 @@ const ContactDetails = () => {
                   size={0}
                   className={styles.contactDetails__formItemSpace}
                 >
-                  <label>PHONE</label>
+                  <label>{t("who.phone")}</label>
                   <Field
                     name="phone"
                     className={styles.contactDetails__input}
@@ -151,7 +154,7 @@ const ContactDetails = () => {
                   size={0}
                   className={styles.contactDetails__formItemSpace}
                 >
-                  <label>CITY</label>
+                  <label>{t("who.city")}</label>
                   <Field
                     name="city"
                     className={styles.contactDetails__input}
@@ -169,7 +172,7 @@ const ContactDetails = () => {
                 type="submit"
                 className={styles.contactDetails__submitButton}
               >
-                SUBMIT
+                {t("who.submit")}
               </button>
             </Form>
           )}

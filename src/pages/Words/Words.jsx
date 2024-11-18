@@ -1,14 +1,19 @@
 import { Button, Checkbox, Col, Row } from "antd";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addUserOption } from "../../store/slices/userOptions";
-import { wordsRepresented } from "../../utils/constants";
+import { wordsRepresented, esWordsRepresented } from "../../utils/constants";
 import styles from "./styles.module.css";
 
 const Words = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [t, i18n] = useTranslation("global");
+
+  const currentLanguage = i18n.language;
+
   const [activeWords, setActiveWords] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
 
@@ -42,7 +47,7 @@ const Words = () => {
         words: transformedOptions,
       })
     );
-    navigate("/contact-details");
+    navigate(`/${currentLanguage || "en"}/contact-details`);
   };
 
   return (
@@ -54,14 +59,14 @@ const Words = () => {
     >
       <Col span={22}>
         <h2 className={styles.words__title}>
-          With which words do you feel most represented?
+        {t("words.title")}
         </h2>
         <Row
           gutter={8}
           justify="center"
           className={styles.wordsSection__buttons}
         >
-          {wordsRepresented.map((word) => {
+          {(currentLanguage === "en" ? wordsRepresented : esWordsRepresented).map((word) => {
             const isWordActive = activeWords.includes(word);
             return (
               <Col span={12} key={word.id}>
@@ -79,7 +84,7 @@ const Words = () => {
         <Row justify="start">
           <Col span={24} className={styles.section__checkbox}>
             <Checkbox style={{ fontSize: "32px" }} onChange={handleOnSelectAll}>
-              All of the above
+            {t("words.allAbove")}
             </Checkbox>
           </Col>
         </Row>
@@ -91,7 +96,7 @@ const Words = () => {
                 className={styles.continue__button}
                 onClick={handleOnNavigate}
               >
-                Continue
+                {t("words.continue")}
               </Button>
             </Col>
           </Row>

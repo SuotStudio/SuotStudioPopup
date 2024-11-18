@@ -1,13 +1,17 @@
 import { Button, Col, Row, Space } from "antd";
+import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addUserOption } from "../../store/slices/userOptions";
-import { issues } from "../../utils/constants";
+import { issues, esIssues } from "../../utils/constants";
 import styles from "./styles.module.css";
 
 const Issues = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [t, i18n] = useTranslation("global");
+
+  const currentLanguage = i18n.language;
 
   const handleOnNavigate = (issue) => {
     dispatch(
@@ -15,7 +19,7 @@ const Issues = () => {
         issue,
       })
     );
-    navigate("/elements");
+    navigate(`/${currentLanguage || "en"}/elements`);
   };
 
   return (
@@ -26,21 +30,21 @@ const Issues = () => {
       className={styles.issues__container}
     >
       <Col xl={20} md={20} xs={22}>
-        <h2 className={styles.issues__title}>
-          What issues have you been focusing on lately?
-        </h2>
+        <h2 className={styles.issues__title}>{t("issues.title")}</h2>
         <Space className={styles.issues__row} direction="vertical" size="large">
-          {issues.map((issue, index) => {
-            return (
-              <Button
-                type="primary"
-                key={index}
-                onClick={() => handleOnNavigate(issue)}
-              >
-                {issue}
-              </Button>
-            );
-          })}
+          {(currentLanguage === "en" ? issues : esIssues).map(
+            (issue, index) => {
+              return (
+                <Button
+                  type="primary"
+                  key={index}
+                  onClick={() => handleOnNavigate(issue)}
+                >
+                  {issue}
+                </Button>
+              );
+            }
+          )}
         </Space>
       </Col>
     </Row>

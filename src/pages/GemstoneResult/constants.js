@@ -9,7 +9,6 @@ import granate from "../../assets/videos/granate_suot.webm";
 import greenAgate from "../../assets/videos/agata_verde.webm";
 import cisoprasa from "../../assets/videos/crisoprasa_2.webm";
 import tumalinatedQuartz from "../../assets/videos/cuarzo_turmalinado_2.webm";
-import lemonQuartz from "../../assets/videos/lemon_quartz.webm";
 
 import amethyst2PNG from "../../assets/stones/amethyst2.png";
 import aventurinePNG from "../../assets/stones/aventurine.png";
@@ -27,8 +26,8 @@ import tourmalinatedQuartzPNG from "../../assets/stones/tourmalinatez_quartz.web
 export const gemstoneResult = {
   AQUARIUS: "AMETHYST",
   VIRGO: "CARNELIAN",
-  CANCER: "AVENTURINE",
-  SCORPIO: "TOPAZ",
+  CANCER: "AVENTURINA",
+  SCORPIO: "TOPACIO",
   ARIES: "RUBY",
   PISCES: "CRHYSOPRASE",
   SAGITTARIUS: "PINK OPAL",
@@ -39,9 +38,24 @@ export const gemstoneResult = {
   CAPRICORN: "GARNET",
 };
 
+export const esGemstoneResult = {
+  ACUARIO: "AMATISTA",
+  VIRGO: "CARNELA",
+  CÁNCER: "AVENTURINA",
+  ESCORPIO: "TOPAZ",
+  ARIES: "RUBÍ",
+  PISIS: "CRISOPRASA",
+  SAGITARIO: "ÓPALO ROSA",
+  GÉMINIS: "CUARZO TUMALINADO",
+  LIBRA: "CITRINO",
+  LEO: "CUARZO ROSA",
+  TAURO: "ÁGATA VERDE",
+  CAPRICORNIO: "GRANATE",
+};
+
 export const gemstoneVideoResult = {
   AQUARIUS: amatista,
-  VIRGO: coralina, 
+  VIRGO: coralina,
   CANCER: aventurina,
   SCORPIO: aguaMarina,
   ARIES: granate,
@@ -52,6 +66,21 @@ export const gemstoneVideoResult = {
   LEO: cuarzorosa,
   TAURUS: greenAgate,
   CAPRICORN: granate,
+};
+
+export const esGemstoneVideoResult = {
+  ACUARIO: amatista,
+  VIRGO: coralina,
+  CÁNCER: aventurina,
+  ESCORPIO: aguaMarina,
+  ARIES: granate,
+  PISIS: cisoprasa,
+  SAGITARIO: cuarzorosa,
+  GÉMINIS: tumalinatedQuartz,
+  LIBRA: citrino,
+  LEO: cuarzorosa,
+  TAURO: greenAgate,
+  CAPRICORNIO: granate,
 };
 
 export const gemstoneResultImgToPrint = {
@@ -67,6 +96,21 @@ export const gemstoneResultImgToPrint = {
   LEO: pinkQuartzPNG,
   TAURUS: greenAgatePNG,
   CAPRICORN: garnetPNG,
+};
+
+export const esGemstoneResultImgToPrint = {
+  ACUARIO: amethyst2PNG,
+  VIRGO: carnelianPNG,
+  CÁNCER: aventurinePNG,
+  ESCORPIO: topazPNG,
+  ARIES: rubyPNG,
+  PISIS: chrysoprasePNG,
+  SAGITARIO: pinkOpalPNG,
+  GÉMINIS: tourmalinatedQuartzPNG,
+  LIBRA: citrineVPNG,
+  LEO: pinkQuartzPNG,
+  TAURO: greenAgatePNG,
+  CAPRICORNIO: garnetPNG,
 };
 
 export const gemstoneResultToPrint = {
@@ -93,4 +137,30 @@ export const gemstoneResultToPrint = {
     "Chosen for its steadfast energy, green agate nurtures balance and growth, harmonizing with your unique life journey.",
   CAPRICORN:
     "Illuminating your path, lemon quartz chose you for clarity and focus, infusing positive energy into your forward steps.",
+};
+
+export const esGemstoneResultToPrint = {
+  ACUARIO:
+    "Tu viaje abarca la amatista porque su energía majestuosa se alinea con tu búsqueda de claridad interior y crecimiento espiritual.",
+  VIRGO:
+    "Enérgica y aventurera, la cornalina te eligió para impulsar tu coraje y creatividad en el camino dinámico de la vida.",
+  CÁNCER:
+    "La aventurina, tu gema, resuena con tu espíritu y te guía hacia la prosperidad y la curación emocional en las aventuras de la vida.",
+  ESCORPIO:
+    "El topacio, gema de amor y fortuna, te eligió para rejuvenecer tu espíritu e iluminar tu camino único de autodescubrimiento.",
+  ARIES:
+    "Ruby protege tu alma apasionada, ofreciéndote vitalidad y protección porque estás destinado a un viaje lleno de positividad.",
+  PISCIS:
+    "Amante de la naturaleza y optimista, la crisoprasa es su compañera, fomentando la compasión y el amor mientras armoniza con el mundo.",
+  SAGITARIO:
+    "Elegido para usted, el ópalo rosa revela tranquilidad y curación emocional, creando un santuario interior para el amor y el bienestar.",
+  GÉMINIS:
+    "El cuarzo turmalinado, resistente y fuerte, es tu aliado, ya que te conecta y protege con gracia ante los desafíos de la vida.",
+  LIBRA:
+    "El cuarzo turmalinado, resistente y fuerte, es tu aliado, ya que te conecta y protege con gracia ante los desafíos de la vida.",
+  LEO: "Tu camino está guiado por el amor y la curación mientras el cuarzo rosa resuena con tu esencia, fomentando la compasión en cada paso.",
+  TAURO:
+    "Elegida por su energía constante, el ágata verde fomenta el equilibrio y el crecimiento, armonizando con su viaje de vida único.",
+  CAPRICORNIO:
+    "Al iluminar tu camino, el cuarzo limón te eligió por tu claridad y concentración, infundiendo energía positiva en tus pasos hacia adelante.",
 };

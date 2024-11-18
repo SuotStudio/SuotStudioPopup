@@ -202,3 +202,18 @@ export const gemstones = {
   TAURUS: greenAgate,
   CAPRICORN: garnet,
 };
+
+export const esGemstones = {
+  ACUARIO: amethyst,
+  VIRGO: carnelian,
+  CÁNCER: aventurine,
+  ESCORPIO: topaz,
+  ARIES: ruby,
+  PISCIS: chrysoprase,
+  SAGITARIO: pinkOpal,
+  GÉMINIS: tourmalinatedQuartz,
+  LIBRA: citrine,
+  LEO: pinkQuartz,
+  TAURO: greenAgate,
+  CAPRICORNIO: garnet,
+};

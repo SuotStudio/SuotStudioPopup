@@ -12,7 +12,6 @@ const userOptionsSlice = createSlice({
   initialState,
   reducers: {
     addUserOption: (state, action) => {
-      console.log("STATE", state, action);
       state.issue =
         action.payload.issue !== undefined ? action.payload.issue : state.issue;
       state.element =
